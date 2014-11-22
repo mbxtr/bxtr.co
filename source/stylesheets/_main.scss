@@ -1,0 +1,98 @@
+@import 'susy';
+
+$susy: (
+  container: 100%,
+  columns: 12,
+  column-width: $site-width/12,
+  gutters: $gutter/($site-width/12),
+  gutter-position: inside-static
+);
+
+// Basic HTML
+// ----------------------------------------------------------------
+
+body {
+  font: #{$font-size-base} / 1.5em $font-body;
+  color: $color-body;
+  background: white;
+}
+
+a {
+  color: $color-link;
+  @include transition(color 100ms);
+
+  &:hover{
+    color: $color-hover;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $weight-semibold;
+}
+
+article,
+.content {
+  @include container;
+  max-width: $site-width;
+}
+
+// Layout
+// ----------------------------------------------------------------
+
+.fullWidthHeader {
+  position: relative;
+  text-align: center;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    top: 50%;
+    border-top: solid 1px $color-ash;
+  }
+
+  h2 {
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    border: solid 1px $color-ash;
+    z-index: 2;
+    color: black;
+    font-weight: $weight-bold;
+    font-size: $font-size-small;
+    text-transform: uppercase;
+    line-height: 40px;
+    background: white;
+
+    $corner-size: 29.8px;
+    $corner-offset: -16px;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 4px;
+      width: $corner-size;
+      height: $corner-size;
+      background-color: white;
+      border-top: solid 1px $color-ash;
+      border-bottom: solid 1px white;
+      z-index: -1;
+    }
+
+    &:before {
+      left: $corner-offset;
+      border-left: solid 1px $color-ash;
+      @include transform(rotate(-45deg) scale(0.81) skewX(-10deg) skewY(-10deg));
+    }
+
+    &:after {
+      right: $corner-offset;
+      border-right: solid 1px $color-ash;
+      @include transform(rotate(45deg) scale(0.81) skewX(10deg) skewY(10deg));
+    }
+  }
+}
