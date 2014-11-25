@@ -1,5 +1,5 @@
 
-$site-width: 780px;
+$site-width: 800px;
 $gutter: 20px;
 
 // Fonts
@@ -15,15 +15,27 @@ $weight-regular: 400;
 $weight-semibold: 600;
 $weight-bold: 700;
 
-$font-size-small: 20px;
-$font-size-base: 24px;
-
+// Modular scale: http://modularscale.com/scale/?px1=24&px2=&ra1=1.25&ra2=0
+$font-sizes: (
+  size-xxsmall: 12px,  // ~0.512em
+  size-xsmall: 15px,   // ~0.64em
+  size-small: 19px,    // ~0.8em
+  size-base: 24px,     // 1em
+  size-medium: 30px,   // ~1.25em
+  size-large: 38px,    // ~1.563em
+  size-xlarge: 47px,   // ~1.953em
+  size-xxlarge: 59px   // ~2.441em
+);
 
 // Colors
 // ----------------------------------------------------------------
 
+$color-orange: #ee5b28;
+$color-ash: #afafaf;
+
 $color-body: #333;
 $color-link: #000;
-$color-hover: #ee5b28;
+$color-link-hover: $color-orange;
 
-$color-ash: #afafaf;
+$color-button: #000;
+$color-button-hover: $color-orange;

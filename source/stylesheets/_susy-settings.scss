@@ -1,0 +1,9 @@
+@import 'susy';
+
+$susy: (
+  container: 100%,
+  columns: 12,
+  column-width: $site-width/12,
+  gutters: $gutter/($site-width/12),
+  gutter-position: inside-static
+);

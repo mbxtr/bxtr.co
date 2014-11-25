@@ -1,18 +1,9 @@
-@import 'susy';
-
-$susy: (
-  container: 100%,
-  columns: 12,
-  column-width: $site-width/12,
-  gutters: $gutter/($site-width/12),
-  gutter-position: inside-static
-);
-
 // Basic HTML
 // ----------------------------------------------------------------
 
 body {
-  font: #{$font-size-base} / 1.5em $font-body;
+  font-family: $font-body;
+  @include fontSize(base);
   color: $color-body;
   background: white;
 }
@@ -22,7 +13,23 @@ a {
   @include transition(color 100ms);
 
   &:hover{
-    color: $color-hover;
+    color: $color-link-hover;
+  }
+}
+
+.button,
+button {
+  background-color: black;
+  color: white;
+  @include transition(background-color 100ms);
+  text-decoration: none;
+  text-transform: uppercase;
+  @include fontSize(small);
+  font-weight: $weight-semibold;
+
+  &:hover {
+    color: white;
+    background-color: $color-button-hover;
   }
 }
 
@@ -30,10 +37,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $weight-semibold;
 }
 
-article,
-.content {
+article {
   @include container;
   max-width: $site-width;
+  padding-left: gutter();
+  padding-right: gutter();
 }
 
 // Layout
@@ -61,12 +69,11 @@ article,
     z-index: 2;
     color: black;
     font-weight: $weight-bold;
-    font-size: $font-size-small;
+    @include fontSize(small);
     text-transform: uppercase;
-    line-height: 40px;
     background: white;
 
-    $corner-size: 29.8px;
+    /*$corner-size: 29.8px;
     $corner-offset: -16px;
 
     &:before,
@@ -93,6 +100,43 @@ article,
       right: $corner-offset;
       border-right: solid 1px $color-ash;
       @include transform(rotate(45deg) scale(0.81) skewX(10deg) skewY(10deg));
+    }*/
+  }
+}
+
+.content {
+  @include span(12);
+}
+
+.postSummary {
+  margin-top: 20px;
+
+  .postSummary-header {
+    @include span(12);
+
+    .postSummary-title {
+      @include fontSize(large);
+      font-weight: $weight-semibold;
+      font-style: italic;
+
+      a {
+        text-decoration: none;
+      }
     }
+
+    .postSummary-meta,
+    .postSummary-tag {
+      color: $color-ash;
+      @include fontSize(small);
+      text-decoration: none;
+    }
+
+    .postSummary-tag:hover {
+      color: $color-link-hover;
+    }
+  }
+
+  .postSummary-teaser {
+    @include span(12);
   }
 }
