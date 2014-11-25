@@ -19,6 +19,7 @@ a {
 
 .button,
 button {
+  display: inline-block;
   background-color: black;
   color: white;
   @include transition(background-color 100ms);
@@ -35,6 +36,8 @@ button {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: $weight-semibold;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
 }
 
 article {
@@ -109,14 +112,12 @@ article {
 }
 
 .postSummary {
-  margin-top: 20px;
 
   .postSummary-header {
     @include span(12);
 
     .postSummary-title {
       @include fontSize(large);
-      font-weight: $weight-semibold;
       font-style: italic;
 
       a {

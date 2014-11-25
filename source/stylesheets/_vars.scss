@@ -16,15 +16,20 @@ $weight-semibold: 600;
 $weight-bold: 700;
 
 // Modular scale: http://modularscale.com/scale/?px1=24&px2=&ra1=1.25&ra2=0
-$font-sizes: (
-  size-xxsmall: 12px,  // ~0.512em
-  size-xsmall: 15px,   // ~0.64em
-  size-small: 19px,    // ~0.8em
-  size-base: 24px,     // 1em
-  size-medium: 30px,   // ~1.25em
-  size-large: 38px,    // ~1.563em
-  size-xlarge: 47px,   // ~1.953em
-  size-xxlarge: 59px   // ~2.441em
+$font-settings: (
+  xxsmall-size: 12px,  // ~0.512em
+  xsmall-size: 15px,   // ~0.64em
+  small-size: 19px,    // ~0.8em
+  base-size: 24px,     // 1em
+  base-lineHeight: 1.5,
+  medium-size: 30px,   // ~1.25em
+  medium-lineHeight: 1.3,
+  large-size: 38px,    // ~1.563em
+  large-lineHeight: 1.3,
+  xlarge-size: 47px,   // ~1.953em
+  xlarge-lineHeight: 1.3,
+  xxlarge-size: 59px,   // ~2.441em
+  xxlarge-lineHeight: 1.3,
 );
 
 // Colors
