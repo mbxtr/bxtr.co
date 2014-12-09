@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 
 article {
   @include container;
-  max-width: $site-width;
+  max-width: $site-width + gutter()*2;
   padding-left: gutter();
   padding-right: gutter();
 }
@@ -50,9 +50,14 @@ article {
 // Layout
 // ----------------------------------------------------------------
 
+section + section {
+  padding-top: 30px;
+}
+
 .fullWidthHeader {
   position: relative;
   text-align: center;
+  margin-bottom: gutter()*3;
 
   &:before {
     content: '';
@@ -113,12 +118,17 @@ article {
 
 .postSummary {
 
+  + .postSummary {
+    margin-top: gutter()*2;
+  }
+
   .postSummary-header {
     @include span(12);
 
     .postSummary-title {
       @include fontSize(large);
       font-style: italic;
+      margin-bottom: 0.1em;
 
       a {
         text-decoration: none;
@@ -139,5 +149,6 @@ article {
 
   .postSummary-teaser {
     @include span(12);
+    margin-top: 0.4em;
   }
 }
