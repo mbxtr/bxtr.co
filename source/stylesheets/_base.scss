@@ -1,0 +1,49 @@
+// Basic HTML
+// ----------------------------------------------------------------
+
+body {
+  font-family: $font-body;
+  @include fontSize(base);
+  color: $color-body;
+  background: white;
+}
+
+a {
+  color: $color-link;
+  @include transition(color 100ms);
+
+  &:hover{
+    color: $color-link-hover;
+  }
+}
+
+.button,
+button {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  @include transition(background-color 100ms);
+  text-decoration: none;
+  text-transform: uppercase;
+  @include fontSize(small);
+  font-weight: $weight-semibold;
+  padding: 8px 16px;
+
+  &:hover {
+    color: white;
+    background-color: $color-button-hover;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $weight-semibold;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+article {
+  @include container;
+  max-width: $site-width + gutter()*2;
+  padding-left: gutter();
+  padding-right: gutter();
+}
