@@ -15,20 +15,10 @@
   </head>
   
   <body class="<%= page_classes %>">
-    <header id="header">
-      <svg class="front-hex" viewBox="0 0 423.609 488.365">
-         <use xlink:href="/images/hexagon.svg#hex"></use>
-      </svg>
-      <svg class="middle-hex" viewBox="0 0 423.609 488.365">
-         <use xlink:href="/images/hexagon.svg#hex"></use>
-      </svg>
-      B X T R
-    </header>
+    <%= partial "partials/header" %>
     <main role="main">
       <%= yield %>
     </main>
-    <footer id="footer">
-      [footer...]
-    </footer>
+    <%= partial "partials/footer" %>
   </body>
 </html>

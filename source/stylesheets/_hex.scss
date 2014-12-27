@@ -1,0 +1,66 @@
+
+%middle-hex {
+  width: 348px;
+  stroke: #ccc;
+}
+
+%back-hex {
+  width: 348px;
+  stroke: #ddd;
+}
+
+.hex-pattern {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+
+  #header & {
+    height: 140px;
+    top: 0;
+  }
+
+  #footer & {
+    bottom: 0;
+    height: 300px;
+  }
+
+  svg {
+    position: absolute;
+
+    #header & {
+      top: 0;
+      @include transform(translateY(-72%) translateX(-50%));  
+    }
+
+    #footer & {
+      top: -15%;
+      @include transform(translateY(40%) translateX(-50%));
+    }
+  }
+
+  .front-hex {
+    width: 424px;
+    stroke: #aaa;
+    left: 50%;
+  }
+
+  .left-back-hex {
+    @extend %back-hex;
+    left: 25%;
+  }
+
+  .right-back-hex {
+    @extend %back-hex;
+    left: 75%;
+  }
+
+  .left-middle-hex {
+    @extend %middle-hex;
+    left: 0;
+  }
+
+  .right-middle-hex {
+    @extend %middle-hex;
+    left: 100%;
+  }
+}
