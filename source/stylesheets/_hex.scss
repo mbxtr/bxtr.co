@@ -1,10 +1,10 @@
 
-%middle-hex {
+%hex--middle {
   width: 348px;
   stroke: #ccc;
 }
 
-%back-hex {
+%hex--back {
   width: 348px;
   stroke: #ddd;
 }
@@ -13,54 +13,72 @@
   position: absolute;
   width: 100%;
   overflow: hidden;
+  z-index: -1;
 
-  #header & {
+  &.hex-pattern--top {
     height: 140px;
     top: 0;
+
+    .hex {
+      top: 0;
+      @include transform(translateY(-72%) translateX(-50%));
+    }
   }
 
-  #footer & {
+  &.hex-pattern--bottom {
     bottom: 0;
     height: 300px;
-  }
 
-  svg {
-    position: absolute;
-
-    #header & {
-      top: 0;
-      @include transform(translateY(-72%) translateX(-50%));  
-    }
-
-    #footer & {
+    .hex {
       top: -15%;
       @include transform(translateY(40%) translateX(-50%));
     }
   }
 
-  .front-hex {
+  .hex-pattern-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: $site-width + 400px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .hex {
+    position: absolute;
+  }
+
+  .hex--front {
     width: 424px;
     stroke: #aaa;
     left: 50%;
   }
 
-  .left-back-hex {
-    @extend %back-hex;
+  .hex--left-back {
+    @extend %hex--back;
     left: 25%;
+
+    @include small-only {
+      display: none;
+    }
   }
 
-  .right-back-hex {
-    @extend %back-hex;
+  .hex--right-back {
+    @extend %hex--back;
     left: 75%;
+
+    @include small-only {
+      display: none;
+    }
   }
 
-  .left-middle-hex {
-    @extend %middle-hex;
+  .hex--left-middle {
+    @extend %hex--middle;
     left: 0;
   }
 
-  .right-middle-hex {
-    @extend %middle-hex;
+  .hex--right-middle {
+    @extend %hex--middle;
     left: 100%;
   }
 }
+

@@ -1,4 +1,14 @@
 
+// Media Query Widths
+// ----------------------------------------------------------------
+
+$large-size: (start: 1024px, end: 9999px);
+$medium-size: (start: 768px, end: 1023px);
+$small-size: (start: 0, end: 767px);
+
+// Layout Sizes
+// ----------------------------------------------------------------
+
 $site-width: 800px;
 $gutter: 20px;
 

@@ -6,6 +6,7 @@ body {
   @include fontSize(base);
   color: $color-body;
   background: white;
+  position: relative;
 }
 
 a {

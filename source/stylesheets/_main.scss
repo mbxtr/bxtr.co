@@ -2,6 +2,10 @@
 // Layout
 // ----------------------------------------------------------------
 
+#main {
+  @extend %clearfix;
+}
+
 section + section {
   padding-top: 30px;
 }

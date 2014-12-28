@@ -15,8 +15,9 @@
   </head>
   
   <body class="<%= page_classes %>">
+    <%= partial "partials/hex-pattern" %>
     <%= partial "partials/header" %>
-    <main role="main">
+    <main id="main" role="main">
       <%= yield %>
     </main>
     <%= partial "partials/footer" %>
