@@ -7,16 +7,16 @@
   line-height: map-get($font-settings, #{$size}-lineHeight);
 }
 
-%u-textCentered,
-.u-textCentered {
+%u-text-centered,
+.u-text-centered {
   text-align: center;
 }
 
 // Layout
 // ----------------------------------------------------------------
 
-%u-imageLeft,
-.u-imageLeft {
+%u-image-left,
+.u-image-left {
   @include span(4);
   padding-right: gutter()*2;
   padding-left: 0;

@@ -10,7 +10,7 @@ section + section {
   padding-top: 30px;
 }
 
-.fullWidthHeader {
+.full-width-header {
   position: relative;
   text-align: center;
   margin-bottom: gutter()*3;
@@ -72,16 +72,16 @@ section + section {
   @include span(12);
 }
 
-.postSummary {
+.post-summary {
 
-  + .postSummary {
+  + .post-summary {
     margin-top: gutter()*2;
   }
 
-  .postSummary-header {
+  .post-summary-header {
     @include span(12);
 
-    .postSummary-title {
+    .post-summary-title {
       @include fontSize(large);
       font-style: italic;
       margin-bottom: 0.1em;
@@ -91,19 +91,19 @@ section + section {
       }
     }
 
-    .postSummary-meta,
-    .postSummary-tag {
+    .post-summary-meta,
+    .post-summary-tag {
       color: $color-ash;
       @include fontSize(small);
       text-decoration: none;
     }
 
-    .postSummary-tag:hover {
+    .post-summary-tag:hover {
       color: $color-link-hover;
     }
   }
 
-  .postSummary-teaser {
+  .post-summary-teaser {
     @include span(12);
     margin-top: 0.4em;
   }
