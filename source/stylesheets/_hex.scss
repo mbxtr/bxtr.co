@@ -77,11 +77,19 @@
   .hex--left-middle {
     @extend %hex--middle;
     left: 0;
+
+    @include small-only {
+      left: -10%;
+    }
   }
 
   .hex--right-middle {
     @extend %hex--middle;
     left: 100%;
+
+    @include small-only {
+      left: 110%;
+    }
   }
 }
 
