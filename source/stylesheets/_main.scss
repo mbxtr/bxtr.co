@@ -108,3 +108,10 @@ section + section {
     margin-top: 0.4em;
   }
 }
+
+// load-svg.js
+// ----------------------------------------------------------------
+
+[data-load-svg] {
+  display: none;
+}
