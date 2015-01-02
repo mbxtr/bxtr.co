@@ -1,3 +1,26 @@
 #header {
   position: relative;
+  padding: 80px 0;
+
+  @include small-only {
+    padding: 60px gutter()*2;
+  }
+}
+
+#logo-type {
+  width: 100%;
+  max-width: 656px;
+  margin: 0 auto;
+  font-size: 0;
+  text-align: center;
+
+  .logo-letter {
+    height: auto;
+    width: 16.31%;
+    margin-right: 11.58%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

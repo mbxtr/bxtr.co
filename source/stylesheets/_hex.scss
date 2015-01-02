@@ -24,6 +24,10 @@
     .hex {
       top: 0;
       @include transform(translateY(-72%) translateX(-50%));
+
+      @include small-only {
+        @include transform(translateY(-82%) translateX(-50%));
+      }
     }
   }
 
