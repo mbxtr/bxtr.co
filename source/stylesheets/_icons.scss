@@ -1,0 +1,24 @@
+.social-icons {
+  @include list-reset;
+  display: inline-block;
+
+  li {
+    float: left;
+    font-size: 0;
+
+    & + li {
+      margin-left: gutter()*2;
+    }
+  }
+
+  a {
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
