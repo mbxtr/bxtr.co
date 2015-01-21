@@ -1,13 +1,23 @@
 #header {
+  @extend %container;
   position: relative;
-  padding: 80px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+  @include medium-up {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
-  @include small-only {
-    padding: 60px gutter()*2;
+  .secondary & {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
 #logo-type {
+  @extend %svg-hover;
+  display: block;
   width: 100%;
   max-width: 656px;
   margin: 0 auto;
@@ -22,5 +32,9 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .secondary & {
+    width: 120px;
   }
 }

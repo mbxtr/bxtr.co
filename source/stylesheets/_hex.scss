@@ -21,9 +21,17 @@
     height: 140px;
     top: 0;
 
+    .secondary & {
+      opacity: 0.7;
+    }
+
     .hex {
       top: 0;
       @include transform(translateY(-72%) translateX(-50%));
+
+      .secondary & {
+        @include transform(translateY(-82%) translateX(-50%));
+      }
 
       @include small-only {
         @include transform(translateY(-82%) translateX(-50%));

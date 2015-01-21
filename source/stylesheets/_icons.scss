@@ -22,3 +22,7 @@
     height: 100%;
   }
 }
+
+.icon {
+  @extend %svg-hover;
+}

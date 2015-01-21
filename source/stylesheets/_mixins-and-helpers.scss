@@ -12,6 +12,22 @@
   text-align: center;
 }
 
+// Icons
+// ----------------------------------------------------------------
+
+%svg-hover {
+  svg {
+    fill: black;
+    @include transition(fill 100ms);
+  }
+
+  &:hover {
+    svg {
+      fill: $color-button-hover;
+    }
+  }
+}
+
 // Layout
 // ----------------------------------------------------------------
 

@@ -1,0 +1,56 @@
+.post {
+
+  .post-header {
+    @include span(12);
+    text-align: center;
+
+    .post-title {
+      font-style: italic;
+      margin-bottom: 0.1em;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    h1.post-title {
+      margin-top: 0;
+      @include fontSize(xxlarge);
+
+      @include small-only {
+        @include fontSize(large);
+      }
+    }
+
+    h3.post-title {
+      @include fontSize(large);
+    }
+
+    .post-meta,
+    .post-summary-tag {
+      color: $color-ash;
+      @include fontSize(small);
+      text-decoration: none;
+    }
+
+    .post-summary-tag:hover {
+      color: $color-link-hover;
+    }
+  }
+
+  .post-teaser,
+  .post-content {
+    @include span(12);
+    margin-top: 0.4em;
+  }
+
+  &.post-summary {
+    + .post-summary {
+      margin-top: gutter()*2;
+    }
+
+    .post-header {
+      text-align: left;
+    }
+  }
+}

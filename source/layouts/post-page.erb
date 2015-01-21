@@ -2,12 +2,12 @@
 <html>
   <%= partial "partials/head" %>
   
-  <body class="<%= page_classes %>">
+  <body class="<%= page_classes %> secondary">
     <%= partial "partials/hex-pattern" %>
     <%= partial "partials/header" %>
     <main id="main" role="main">
       <%= yield %>
     </main>
-    <%= partial "partials/footer" %>
+    <%= partial "partials/footer-secondary" %>
   </body>
 </html>
