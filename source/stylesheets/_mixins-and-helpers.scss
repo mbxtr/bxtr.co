@@ -3,8 +3,8 @@
 // ----------------------------------------------------------------
 
 @mixin fontSize($size) {
-  font-size: map-get($font-settings, #{$size}-size);
-  line-height: map-get($font-settings, #{$size}-lineHeight);
+  font-size: map-get($font-scales, #{$size}-size);
+  line-height: map-get($font-scales, #{$size}-lineHeight);
 }
 
 %u-text-centered,
