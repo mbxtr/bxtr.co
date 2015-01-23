@@ -18,11 +18,15 @@
 #logo-type {
   @extend %svg-hover;
   display: block;
-  width: 100%;
+  width: 75%;
   max-width: 656px;
   margin: 0 auto;
   font-size: 0;
   text-align: center;
+
+  @include medium-up {
+    width: 100%;
+  }
 
   .logo-letter {
     height: auto;
