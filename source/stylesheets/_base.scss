@@ -27,6 +27,10 @@ a {
   }
 }
 
+b {
+  font-weight: $weight-semibold;
+}
+
 .button,
 button {
   display: inline-block;
@@ -45,10 +49,29 @@ button {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, ul, ol, p {
+  margin-top: 0;
+}
+
+h1, h2, h3, h4 {
   font-weight: $weight-semibold;
-  margin-top: 0.4rem;
   margin-bottom: 0.4rem;
+}
+
+h1 {
+  @include fontSize(xlarge);
+}
+
+h2 {
+  @include fontSize(xlarge);
+}
+
+h3 {
+  @include fontSize(large);
+}
+
+h4 {
+  @include fontSize(medium);
 }
 
 article,
