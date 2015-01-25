@@ -2,6 +2,7 @@
 // ----------------------------------------------------------------
 
 html {
+  -webkit-font-smoothing: antialiased;
   font-size: 20px;
 
   @include medium-up {
