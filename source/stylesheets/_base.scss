@@ -54,8 +54,9 @@ h1, h2, h3, h4, ul, ol, p {
 }
 
 h1, h2, h3, h4 {
+  font-family: $font-heading;
   font-weight: $weight-semibold;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.4em;
 }
 
 h1 {

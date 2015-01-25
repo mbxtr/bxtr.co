@@ -35,6 +35,7 @@ section + section {
     color: black;
     font-weight: $weight-bold;
     @include fontSize(small);
+    font-family: $arno;
     text-transform: uppercase;
     background: white;
 

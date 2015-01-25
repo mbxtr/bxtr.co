@@ -16,14 +16,18 @@ $gutter: 20px;
 // ----------------------------------------------------------------
 
 $arno: 'arno-pro', Georgia, serif;
+$arno-display: 'arno-pro-display', Georgia, serif;
 
 $font-body: $arno;
-$font-heading: $arno;
+$font-heading: $arno-display;
 $font-button: $arno;
 
+$weight-light: 300;
 $weight-regular: 400;
+$weight-medium: 500;
 $weight-semibold: 600;
 $weight-bold: 700;
+$weight-black: 900;
 
 // Modular scale: http://modularscale.com/scale/?px1=24&px2=&ra1=1.25&ra2=0
 $font-scales: (
