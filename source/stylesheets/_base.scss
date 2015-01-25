@@ -76,11 +76,6 @@ h4 {
   @include fontSize(medium);
 }
 
-article,
-.container,
-%container {
-  @include container;
-  max-width: $site-width + gutter()*2;
-  padding-left: gutter();
-  padding-right: gutter();
+article {
+  @include layout-container;
 }

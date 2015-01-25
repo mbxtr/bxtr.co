@@ -10,7 +10,7 @@ layout: post-page
       <span class="post-meta"><time>June 3, 2014</time> &middot; <a href="#" class="post-summary-tag">#coffee</a></span>
     </header>
     <div class="post-content">
-      <p>Coffee is delicious and pretty much the best thing in the world. However, in order to fully enjoy it you need to do certain things to let everyone know that you enjoy it. Here’s a handy how-to guide for doing that.</p>
+      <p>Coffee is delicious and <a href="#">pretty much the best thing in the world</a>. However, in order to fully enjoy it you need to do certain things to let everyone know that you enjoy it. Here’s a handy how-to guide for doing that.</p>
       <h2>Heading 2</h2>
       <p><b>Lorem ipsum dolor sit amet</b>, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -50,4 +50,61 @@ layout: post-page
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </article>
+</section>
+
+<section class="column-section">
+  <header class="full-width-header"><h2>&nbsp;</h2></header>
+  <div class="column-section-content two-columns">
+    <section>
+      <header class="full-width-header"><h2>About Me</h2></header>
+      <article>
+        <div class="content">
+          <p><img src="http://placehold.it/400x400" class="u-image-left" /> I'm Matt Baxter; a designer and developer in Dallas, TX.</p>
+          <p><a href="#">Read more about me »</a></p>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <header class="full-width-header"><h2>Elsewhere</h2></header>
+      <div class="container">
+        <div class="content u-text-centered">
+          <div data-load-svg="/images/social-icons.svg"></div>
+          <ul class="social-icons">
+            <li>
+              <a href="<%= data.social.twitter %>" class="icon">
+                Twitter
+                <svg viewBox="0 0 60 60">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="<%= data.social.linkedin %>" class="icon">
+                LinkedIn
+                <svg viewBox="0 0 60 60">
+                  <use xlink:href="#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:<%= data.social.mail %>" class="icon">
+                E-mail
+                <svg viewBox="0 0 60 60">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+<section>
+  <header class="full-width-header no-text"><h2>&nbsp;</h2></header>
+  <div class="container">
+    <div class="content u-text-centered">
+      <a href="#" class="button">More Posts</a>
+    </div>
 </section>
