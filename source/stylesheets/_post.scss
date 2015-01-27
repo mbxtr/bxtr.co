@@ -10,7 +10,7 @@
       -webkit-font-smoothing: auto;
       font-style: italic;
       margin-bottom: 0.1em;
-      font-weight: $weight-bold;
+      font-weight: $weight-semibold;
 
       a {
         text-decoration: none;
@@ -89,7 +89,7 @@
   }
 }
 
-.column-section {
+.secondary-section {
   position: relative;
 
   > .full-width-header {
@@ -105,7 +105,9 @@
     }
   }
 
-  .column-section-content {
+  .secondary-section-content {
+    @include fontSize(small);
+
     @include medium-up {
       @include layout-container;
 

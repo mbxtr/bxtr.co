@@ -39,9 +39,9 @@ section + section {
     border: solid 1px $color-ash;
     z-index: 2;
     color: black;
-    font-weight: $weight-bold;
+    font-weight: $weight-regular;
     @include fontSize(small);
-    font-family: $arno;
+    font-family: $font-heading;
     text-transform: uppercase;
     background: white;
 
