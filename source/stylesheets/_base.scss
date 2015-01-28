@@ -41,7 +41,7 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   @include fontSize(small);
-  font-weight: $weight-regular;
+  font-weight: $weight-semibold;
   font-family: $font-button;
   padding: 8px 16px;
 
