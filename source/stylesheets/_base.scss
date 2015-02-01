@@ -36,8 +36,9 @@ b {
 button {
   display: inline-block;
   background-color: black;
+  border: solid 1px black;
   color: white;
-  @include transition(background-color 100ms);
+  @include transition(background-color 100ms, border-color 100ms);
   text-decoration: none;
   text-transform: uppercase;
   @include fontSize(small);
@@ -48,6 +49,7 @@ button {
   &:hover {
     color: white;
     background-color: $color-button-hover;
+    border-color: $color-button-hover;
   }
 }
 

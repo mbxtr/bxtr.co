@@ -34,45 +34,32 @@ section + section {
   h2 {
     display: inline-block;
     position: relative;
-    padding: 8px 16px;
+    padding: 8px 30px;
     margin: 0;
-    border: solid 1px $color-ash;
+
     z-index: 2;
     color: black;
     font-weight: $weight-semibold;
     @include fontSize(small);
     font-family: $font-body;
     text-transform: uppercase;
-    background: white;
+    background-color: white;
 
-    /*$corner-size: 29.8px;
-    $corner-offset: -16px;
-
-    &:before,
-    &:after {
+    &:before {
       content: '';
       display: block;
       position: absolute;
-      top: 4px;
-      width: $corner-size;
-      height: $corner-size;
-      background-color: white;
-      border-top: solid 1px $color-ash;
-      border-bottom: solid 1px white;
       z-index: -1;
     }
 
     &:before {
-      left: $corner-offset;
-      border-left: solid 1px $color-ash;
-      @include transform(rotate(-45deg) scale(0.81) skewX(-10deg) skewY(-10deg));
+      top: -1px;
+      right: -1px;
+      bottom: -1px;
+      left: -1px;
+      border-width: 2px 15px;
+      @include border-image(url('../images/heading.svg') 2 15 round);
     }
-
-    &:after {
-      right: $corner-offset;
-      border-right: solid 1px $color-ash;
-      @include transform(rotate(45deg) scale(0.81) skewX(10deg) skewY(10deg));
-    }*/
   }
 }
 
