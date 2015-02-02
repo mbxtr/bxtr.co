@@ -21,7 +21,7 @@ body {
 
 a {
   color: $color-link;
-  @include transition(color 100ms);
+  @include transition(color $transition-color);
 
   &:hover{
     color: $color-link-hover;
@@ -34,22 +34,34 @@ b {
 
 .button,
 button {
+  position: relative;
   display: inline-block;
   background-color: black;
-  border: solid 1px black;
   color: white;
-  @include transition(background-color 100ms, border-color 100ms);
+  @include transition(background-color $transition-color, border-color $transition-color);
   text-decoration: none;
   text-transform: uppercase;
   @include fontSize(small);
   font-weight: $weight-semibold;
   font-family: $font-button;
-  padding: 8px 16px;
+  padding: 8px 30px;
 
   &:hover {
     color: white;
     background-color: $color-button-hover;
     border-color: $color-button-hover;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border-width: 2px 15px;
+    @include border-image(url('../images/button.svg') 2 15 round);
   }
 }
 

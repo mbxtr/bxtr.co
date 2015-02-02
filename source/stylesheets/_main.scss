@@ -49,10 +49,6 @@ section + section {
       content: '';
       display: block;
       position: absolute;
-      z-index: -1;
-    }
-
-    &:before {
       top: -1px;
       right: -1px;
       bottom: -1px;

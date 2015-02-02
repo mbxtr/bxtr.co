@@ -18,7 +18,7 @@
 %svg-hover {
   svg {
     fill: black;
-    @include transition(fill 100ms);
+    @include transition(fill $transition-color);
   }
 
   &:hover {
