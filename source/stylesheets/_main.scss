@@ -40,7 +40,7 @@ section + section {
     z-index: 2;
     color: black;
     font-weight: $weight-semibold;
-    @include fontSize(small);
+    @include font-size(small);
     font-family: $font-body;
     text-transform: uppercase;
     background-color: white;

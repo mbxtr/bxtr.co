@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: $font-body;
-  @include fontSize(base);
+  @include font-size(base);
   color: $color-body;
   background: white;
   position: relative;
@@ -41,7 +41,7 @@ button {
   @include transition(background-color $transition-color, border-color $transition-color);
   text-decoration: none;
   text-transform: uppercase;
-  @include fontSize(small);
+  @include font-size(small);
   font-weight: $weight-semibold;
   font-family: $font-button;
   padding: 8px 30px;
@@ -76,19 +76,19 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  @include fontSize(xlarge);
+  @include font-size(xlarge);
 }
 
 h2 {
-  @include fontSize(xlarge);
+  @include font-size(xlarge);
 }
 
 h3 {
-  @include fontSize(large);
+  @include font-size(large);
 }
 
 h4 {
-  @include fontSize(medium);
+  @include font-size(medium);
 }
 
 article {

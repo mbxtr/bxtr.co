@@ -2,7 +2,7 @@
 // Fonts
 // ----------------------------------------------------------------
 
-@mixin fontSize($size) {
+@mixin font-size($size) {
   font-size: map-get($font-scales, #{$size}-size);
   line-height: map-get($font-scales, #{$size}-lineHeight);
 }

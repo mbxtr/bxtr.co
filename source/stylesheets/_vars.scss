@@ -51,13 +51,18 @@ $font-scales: (
 // ----------------------------------------------------------------
 
 $color-orange: #ee5b28;
+
+$color-dusk: #333;
+$color-smoke: #444;
+$color-rock: #666;
+$color-slate: #888;
 $color-ash: #afafaf;
 
-$color-body: #333;
-$color-link: #000;
+$color-body: $color-dusk;
+$color-link: black;
 $color-link-hover: $color-orange;
 
-$color-button: #000;
+$color-button: black;
 $color-button-hover: $color-orange;
 
 // Transition Times
