@@ -7,7 +7,7 @@
 }
 
 section + section {
-  padding-top: 30px;
+  padding-top: gutter()*3;
 }
 
 .full-width-header {
@@ -61,4 +61,8 @@ section + section {
 
 .content {
   @include span(12);
+}
+
+#footer {
+  margin-top: gutter()*3;
 }

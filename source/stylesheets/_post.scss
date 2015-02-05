@@ -36,6 +36,20 @@
       text-decoration: none;
     }
 
+    .post-meta-tags {
+      @include list-reset;
+      display: inline-block;
+      vertical-align: middle;
+
+      li {
+        float: left;
+
+        + li:before {
+          content: ', ';
+        }
+      }
+    }
+
     .post-summary-tag:hover {
       color: $color-link-hover;
     }

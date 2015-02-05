@@ -6,7 +6,23 @@
     <%= partial "partials/hex-pattern" %>
     <%= partial "partials/header" %>
     <main id="main" role="main">
-      <%= yield %>
+      <section>
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title"><a href="#"><%= current_page.data.title %></a></h1>
+            <div class="post-meta"><time><%= Date.strptime(current_page.data.date, "%m/%d/%Y").strftime("%B %e, %Y") %></time> &middot; 
+              <ul class="post-meta-tags">
+                <% current_page.data.tags.each do |t| %>
+                  <li><a href="#" class="post-summary-tag">#<%= t %></a></li>
+                <% end %>
+              </ul>
+            </div>
+          </header>
+          <div class="post-content">
+            <%= yield %>
+          </div>
+        </article>
+      </section>
     </main>
     <%= partial "partials/footer-secondary" %>
   </body>
