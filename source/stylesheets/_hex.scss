@@ -1,11 +1,11 @@
 
-%hex--middle {
+%hex-middle {
   width: 348px;
   height: 401px;
   stroke: #ccc;
 }
 
-%hex--back {
+%hex-back {
   width: 348px;
   height: 401px;
   stroke: #ddd;
@@ -17,7 +17,7 @@
   overflow: hidden;
   z-index: -1;
 
-  &.hex-pattern--top {
+  &.hex-pattern-top {
     height: 140px;
     top: 0;
 
@@ -39,7 +39,7 @@
     }
   }
 
-  &.hex-pattern--bottom {
+  &.hex-pattern-bottom {
     bottom: 0;
     height: 300px;
 
@@ -61,15 +61,15 @@
     position: absolute;
   }
 
-  .hex--front {
+  .hex-front {
     width: 424px;
     height: 488px;
     stroke: #aaa;
     left: 50%;
   }
 
-  .hex--left-back {
-    @extend %hex--back;
+  .hex-left-back {
+    @extend %hex-back;
     left: 25%;
 
     @include small-only {
@@ -77,8 +77,8 @@
     }
   }
 
-  .hex--right-back {
-    @extend %hex--back;
+  .hex-right-back {
+    @extend %hex-back;
     left: 75%;
 
     @include small-only {
@@ -86,8 +86,8 @@
     }
   }
 
-  .hex--left-middle {
-    @extend %hex--middle;
+  .hex-left-middle {
+    @extend %hex-middle;
     left: 0;
 
     @include small-only {
@@ -95,8 +95,8 @@
     }
   }
 
-  .hex--right-middle {
-    @extend %hex--middle;
+  .hex-right-middle {
+    @extend %hex-middle;
     left: 100%;
 
     @include small-only {
