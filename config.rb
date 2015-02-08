@@ -32,6 +32,8 @@
 # Helpers
 ###
 
+activate :directory_indexes
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
@@ -71,4 +73,5 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+# Expose bower_components to sprockets
 sprockets.append_path File.join root, 'bower_components'
