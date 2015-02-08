@@ -38,18 +38,6 @@
   padding-right: gutter();
 }
 
-.container,
-%container {
-  @include layout-container;
-}
-
-%u-image-left,
-.u-image-left {
-  @include span(4);
-  padding-right: gutter()*2;
-  padding-left: 0;
-}
-
 @mixin list-reset {
   margin: 0;
   padding: 0;
@@ -58,6 +46,32 @@
   li {
     display: block;
   }
+}
+
+.container,
+%container {
+  @include layout-container;
+}
+
+%u-width-33,
+.u-width-33 {
+  @include span(4);
+}
+
+%u-image-left,
+.u-image-left {
+  float: left;
+  padding-right: gutter()*2;
+  padding-bottom: gutter()*2;
+  padding-left: 0;
+}
+
+%u-image-right,
+.u-image-right {
+  float: right;
+  padding-left: gutter()*2;
+  padding-bottom: gutter()*2;
+  padding-right: 0;
 }
 
 // Clearfix
