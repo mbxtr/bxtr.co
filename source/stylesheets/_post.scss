@@ -76,9 +76,10 @@
     blockquote {
       border: solid 2px;
       font-weight: $weight-semibold;
+      font-style: italic;
       border-left: none;
       border-right: none;
-      padding: 0.5em;
+      padding: gutter()*2;
       margin-left: 0;
       margin-right: 0;
 
