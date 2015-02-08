@@ -2,38 +2,22 @@
   margin-bottom: gutter()*2;
 
   .post-header {
-    @include span(12);
-    text-align: center;
-    margin: gutter()*2 0 gutter()*3;
+    @extend %header;
 
-    .post-title {
-      -webkit-font-smoothing: auto;
-      margin-bottom: 0;
-      font-weight: $weight-semibold;
-
-      a {
-        text-decoration: none;
-      }
-    }
-
-    h1.post-title {
-      margin-top: 0;
-      @include font-size(xxlarge);
-
-      @include small-only {
-        @include font-size(xlarge);
-      }
+    a {
+      text-decoration: none;
     }
 
     h3.post-title {
       @include font-size(large);
+      margin-bottom: 0;
+      font-weight: $weight-semibold;
     }
 
     .post-meta,
     .post-summary-tag {
       color: $color-ash;
       @include font-size(small);
-      text-decoration: none;
     }
 
     .post-meta-tags {

@@ -48,6 +48,27 @@
   }
 }
 
+%header {
+  @include span(12);
+  text-align: center;
+  margin: gutter()*2 0 gutter()*3;
+
+  h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: $weight-semibold;
+    @include font-size(xxlarge);
+
+    @include small-only {
+      @include font-size(xlarge);
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 .container,
 %container {
   @include layout-container;
