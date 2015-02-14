@@ -1,6 +1,7 @@
 ---
 title: Archive
 layout: secondary
+pageable: true
 ---
 
 <section>
@@ -9,21 +10,23 @@ layout: secondary
       <h1 class="page-title">Archive</h1>
     </header>
   </div>
-  <article class="post post-summary">
-    <header class="post-header">
-      <h3 class="post-title"><a href="#">10 Ways to be Snobby and Annoying About Coffee</a></h3>
-      <div class="post-meta"><time>June 3, 2014</time> &middot; <a href="#" class="post-summary-tag">#coffee</a></div>
-    </header>
-    <p class="post-teaser">Coffee is delicious and pretty much the best thing in the world. However, in order to fully enjoy it you need to do certain things to let everyone know that you enjoy it. Here’s a handy how-to guide for doing that.</p>
-  </article>
-  <article class="post post-summary">
-    <header class="post-header">
-      <h3 class="post-title"><a href="#">10 Ways to be Snobby and Annoying About Coffee and Still Have Friends</a></h3>
-      <div class="post-meta"><time>June 3, 2014</time> &middot; <a href="#" class="post-summary-tag">#coffee</a></div>
-    </header>
-    <p class="post-teaser">Coffee is delicious and pretty much the best thing in the world. However, in order to fully enjoy it you need to do certain things to let everyone know that you enjoy it. Here’s a handy how-to guide for doing that.</p>
-  </article>
+  <% page_articles.each do |article| %>
+    <article class="post post-summary">
+      <header class="post-header">
+        <h3 class="post-title"><a href="<%= article.url %>"><%= article.title %></a></h3>
+        <div class="post-meta"><time><%= article.date.strftime("%B %e, %Y") %></time><%# &middot; <a href="#" class="post-summary-tag">#coffee</a>%></div>
+      </header>
+      <div class="post-teaser"><%= Nokogiri::HTML(article.summary(200, '&hellip;')).text %></div>
+    </article>
+  <% end %>
   <p class="u-text-centered">
-    <a href="#" class="button">Next</a>
+    <% if paginate %>
+      <% if prev_page %>
+        <a href="<%= prev_page.url %>" class="button">Prev</a>
+      <% end %>
+      <% if next_page %>
+        <a href="<%= next_page.url %>" class="button">Next</a>
+      <% end %>
+    <% end %>
   </p>
 </section>

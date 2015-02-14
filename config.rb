@@ -28,11 +28,25 @@
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
+Time.zone = "US/Central"
+
+activate :blog do |blog|
+  blog.layout = "post-entry"
+  blog.paginate = true
+  blog.per_page = 10
+  blog.permalink = "/{title}.html"
+  blog.sources = "posts/{year}-{month}-{day}-{title}.html"
+  blog.summary_separator = /\/\/READMORE/
+end
+
+# Pretty URLS
+activate :directory_indexes
+
+set :markdown, :auto_ids => false
+
 ###
 # Helpers
 ###
-
-activate :directory_indexes
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes

@@ -80,15 +80,15 @@ h1 {
 }
 
 h2 {
-  @include font-size(xlarge);
-}
-
-h3 {
   @include font-size(large);
 }
 
-h4 {
+h3 {
   @include font-size(medium);
+}
+
+h4 {
+  @include font-size(base);
 }
 
 article {

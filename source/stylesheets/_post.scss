@@ -1,5 +1,5 @@
 .post {
-  margin-bottom: gutter()*2;
+  margin-bottom: gutter()*3;
 
   .post-header {
     @extend %header;
@@ -79,7 +79,7 @@
       font-style: italic;
       border-left: none;
       border-right: none;
-      padding: gutter()*2;
+      padding: 1em gutter()*2 0;
       margin-left: 0;
       margin-right: 0;
 
