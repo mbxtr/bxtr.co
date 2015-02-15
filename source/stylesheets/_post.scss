@@ -74,19 +74,10 @@
     }
 
     blockquote {
-      border: solid 2px;
-      font-weight: $weight-semibold;
-      font-style: italic;
-      border-left: none;
-      border-right: none;
-      padding: 1em gutter()*2 0;
-      margin-left: 0;
-      margin-right: 0;
-
-      @include medium-up {
-        margin-left: -2*gutter();
-        margin-right: -2*gutter();
-      }
+      border-left: solid 1px $color-ash;
+      color: $color-slate;
+      padding: 0 gutter()*2;
+      margin: 0 gutter()*2;
     }
   }
 }
