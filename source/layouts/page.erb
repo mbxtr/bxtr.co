@@ -7,11 +7,11 @@
     <%= partial "partials/header" %>
     <main id="main" role="main">
       <section>
-        <article class="post">
-          <header class="post-header">
-            <h1 class="post-title"><a href="#"><%= current_page.data.title %></a></h1>
+        <article class="entry">
+          <header class="entry-header">
+            <h1 class="entry-title"><%= current_page.data.title %></h1>
           </header>
-          <div class="post-content">
+          <div class="entry-content">
             <%= yield %>
           </div>
         </article>

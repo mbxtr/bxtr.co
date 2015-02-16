@@ -31,7 +31,7 @@
 Time.zone = "US/Central"
 
 activate :blog do |blog|
-  blog.layout = "post-entry"
+  blog.layout = "post"
   blog.paginate = true
   blog.per_page = 10
   blog.permalink = "/{title}.html"

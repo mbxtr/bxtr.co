@@ -1,26 +1,26 @@
-.post {
+.entry {
   margin-bottom: gutter()*3;
 
-  .post-header {
+  .entry-header {
     @extend %header;
 
     a {
       text-decoration: none;
     }
 
-    h3.post-title {
+    h3.entry-title {
       @include font-size(large);
       margin-bottom: 0;
       font-weight: $weight-semibold;
     }
 
-    .post-meta,
-    .post-summary-tag {
+    .entry-meta,
+    .entry-summary-tag {
       color: $color-ash;
       @include font-size(small);
     }
 
-    .post-meta-tags {
+    .entry-meta-tags {
       @include list-reset;
       display: inline-block;
       vertical-align: middle;
@@ -34,29 +34,29 @@
       }
     }
 
-    .post-summary-tag:hover {
+    .entry-summary-tag:hover {
       color: $color-link-hover;
     }
   }
 
-  .post-teaser,
-  .post-content {
+  .entry-teaser,
+  .entry-content {
     @include span(12);
     margin-top: 0.4em;
   }
 
-  &.post-summary {
-    + .post-summary {
+  &.entry-summary {
+    + .entry-summary {
       margin-top: gutter()*2;
     }
 
-    .post-header {
+    .entry-header {
       text-align: left;
       margin: 0;
     }
   }
 
-  .post-content {
+  .entry-content {
     h2, h3, h4 {
       margin: 1em 0 0.3em;
     }

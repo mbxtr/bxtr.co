@@ -11,12 +11,12 @@ pageable: true
     </header>
   </div>
   <% page_articles.each do |article| %>
-    <article class="post post-summary">
-      <header class="post-header">
-        <h3 class="post-title"><a href="<%= article.url %>"><%= article.title %></a></h3>
-        <div class="post-meta"><time><%= article.date.strftime("%B %e, %Y") %></time><%# &middot; <a href="#" class="post-summary-tag">#coffee</a>%></div>
+    <article class="entry entry-summary">
+      <header class="entry-header">
+        <h3 class="entry-title"><a href="<%= article.url %>"><%= article.title %></a></h3>
+        <div class="entry-meta"><time><%= article.date.strftime("%B %e, %Y") %></time></div>
       </header>
-      <div class="post-teaser"><%= Nokogiri::HTML(article.summary(200, '&hellip;')).text %></div>
+      <div class="entry-teaser"><%= Nokogiri::HTML(article.summary(200, '&hellip;')).text %></div>
     </article>
   <% end %>
   <p class="u-text-centered">

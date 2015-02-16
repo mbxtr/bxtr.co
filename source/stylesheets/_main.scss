@@ -63,6 +63,10 @@ section + section {
   @include span(12);
 }
 
+.page-header {
+  @extend %header;
+}
+
 #footer {
   margin-top: gutter()*3;
 }
