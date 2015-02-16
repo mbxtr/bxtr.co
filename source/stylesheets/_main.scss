@@ -67,6 +67,10 @@ section + section {
   @extend %header;
 }
 
+.about-image {
+  @extend %u-image-left, %u-width-33, %u-image-border;
+}
+
 #footer {
   margin-top: gutter()*3;
 }

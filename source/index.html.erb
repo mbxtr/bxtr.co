@@ -6,7 +6,7 @@ title: Welcome
   <header class="full-width-header"><h2>About Me</h2></header>
   <article>
     <div class="content">
-      <p><img src="http://placehold.it/400x400" class="u-image-left u-width-33" /> Hi, my name is <a href="/about">Matt Baxter</a>. I’m a <a href="<%= data.links.linkedin %>">designer and developer</a> at <a href="<%= data.links.work %>">projekt202</a> in Dallas, TX.</p>  
+      <p><%= image_tag 'me.jpg', :class => 'about-image' %> Hi, my name is <a href="/about">Matt Baxter</a>. I’m a <a href="<%= data.links.linkedin %>">designer and developer</a> at <a href="<%= data.links.work %>">projekt202</a> in Dallas, TX.</p>
       <p>I like to <a href="<%= data.links.sketch %>">doodle and sketch</a>. I <a href="<%= data.links.twitter %>">tweet</a> about design, technology, coffee, and life. When I have more to say than 140 characters, I <a href="/archive">write</a> on this site.</p>
     </div>
     <div class="content">
