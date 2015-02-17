@@ -8,6 +8,8 @@ gem "middleman-blog"
 
 gem "nokogiri"
 
+gem "builder"
+
 gem "susy"
 
 # Live-reloading plugin

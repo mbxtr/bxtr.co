@@ -39,6 +39,8 @@ activate :blog do |blog|
   blog.summary_separator = /\/\/READMORE/
 end
 
+page "/feed.xml", :layout => false
+
 # Pretty URLS
 activate :directory_indexes
 
