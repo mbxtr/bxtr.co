@@ -79,6 +79,13 @@
   @include span(4);
 }
 
+%u-width-small-100,
+.u-width-small-100 {
+  @include small-only {
+    @include span(12);
+  }
+}
+
 %u-image-left,
 .u-image-left {
   float: left;
