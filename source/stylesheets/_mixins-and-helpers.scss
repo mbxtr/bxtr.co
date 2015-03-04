@@ -74,6 +74,11 @@
   @include layout-container;
 }
 
+%u-width-25,
+.u-width-25 {
+  @include span(3);
+}
+
 %u-width-33,
 .u-width-33 {
   @include span(4);
