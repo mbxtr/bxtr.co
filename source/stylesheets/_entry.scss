@@ -11,7 +11,6 @@
     h3.entry-title {
       @include font-size(large);
       margin-bottom: 0;
-      font-weight: $weight-semibold;
     }
 
     .entry-meta,
@@ -59,18 +58,7 @@
   .entry-content {
     h2, h3, h4 {
       margin: 1em 0 0.3em;
-    }
-
-    h2 {
-      color: $color-smoke;
-    }
-
-    h3 {
-      color: $color-rock;
-    }
-
-    h4 {
-      color: $color-slate;
+      color: $color-heading;
     }
 
     blockquote {

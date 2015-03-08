@@ -38,7 +38,7 @@ section + section {
     margin: 0;
 
     z-index: 2;
-    color: black;
+    color: $color-heading;
     font-weight: $weight-semibold;
     @include font-size(small);
     font-family: $font-body;

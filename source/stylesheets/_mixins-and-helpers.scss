@@ -56,7 +56,6 @@
   h1 {
     margin-bottom: 0;
     margin-top: 0;
-    font-weight: $weight-semibold;
     @include font-size(xxlarge);
 
     @include small-only {
@@ -66,6 +65,16 @@
     a {
       text-decoration: none;
     }
+  }
+
+  .entry-title,
+  .entry-title a {
+    color: $color-heading;
+    font-weight: $weight-semibold;
+  }
+
+  .entry-title a:hover {
+    color: $color-link-hover;
   }
 }
 
