@@ -53,8 +53,10 @@ section + section {
       right: -1px;
       bottom: -1px;
       left: -1px;
-      border-width: 2px 15px;
-      @include border-image(url('../images/heading.svg') 2 15 round);
+      border-width: 1px 15px;
+      border-style: solid;
+      border-color: transparent;
+      @include border-image(url('../images/heading.svg') 1 15 stretch);
     }
   }
 }
