@@ -1,4 +1,5 @@
 .entry {
+  @extend %clearfix;
   margin-bottom: gutter()*3;
 
   .entry-header {
