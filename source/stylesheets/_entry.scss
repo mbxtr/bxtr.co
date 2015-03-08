@@ -74,6 +74,14 @@
       margin-bottom: 1em;
       max-width: 100%;
     }
+
+    .photo-wide {
+      @include large-up {
+        max-width: none;
+        width: $site-width + gutter()*8;
+        left: gutter()*-4;
+      }
+    }
   }
 }
 
