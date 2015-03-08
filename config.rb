@@ -44,7 +44,7 @@ page "/feed.xml", :layout => false
 # Pretty URLS
 activate :directory_indexes
 
-set :markdown, :auto_ids => false
+set :markdown, :auto_ids => false, :smartypants => true
 
 ###
 # Helpers
