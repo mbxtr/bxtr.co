@@ -17,6 +17,8 @@
         </article>
       </section>
     </main>
-    <%= partial "partials/footer-page" %>
+    <% unless current_page.data.no_footer %>
+      <%= partial "partials/footer-page" %>
+    <% end %>
   </body>
 </html>
