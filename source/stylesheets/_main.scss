@@ -26,6 +26,8 @@ section + section {
   }
 
   &.no-text {
+    margin-bottom: gutter()*3;
+
     h2 {
       visibility: hidden;
     }
