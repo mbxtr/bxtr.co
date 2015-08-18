@@ -54,12 +54,12 @@
   margin: gutter()*2 0 gutter()*3;
 
   h1 {
-    margin-bottom: 0;
+    margin-bottom: 0.2em;
     margin-top: 0;
-    @include font-size(xxlarge);
+    @include font-size(xxxlarge);
 
     @include small-only {
-      @include font-size(xlarge);
+      @include font-size(xxlarge);
     }
 
     a {
@@ -70,7 +70,6 @@
   .title,
   .title a {
     color: $color-heading;
-    font-weight: $weight-semibold;
   }
 
   .title a:hover {

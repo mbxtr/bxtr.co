@@ -41,7 +41,7 @@ section + section {
 
     z-index: 2;
     color: $color-heading;
-    font-weight: $weight-semibold;
+    font-weight: $weight-bold;
     @include font-size(small);
     font-family: $font-body;
     text-transform: uppercase;

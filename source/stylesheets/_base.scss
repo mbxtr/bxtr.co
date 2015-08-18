@@ -3,11 +3,7 @@
 
 html {
   -webkit-font-smoothing: antialiased;
-  font-size: 20px;
-
-  @include medium-up {
-    font-size: 24px;
-  }
+  font-size: 18px;
 }
 
 body {
@@ -71,26 +67,30 @@ h1, h2, h3, h4, ul, ol, p {
   margin-top: 0;
 }
 
+ul, ol, p {
+  margin-bottom: 1.2em;
+}
+
 h1, h2, h3, h4 {
   font-family: $font-heading;
-  font-weight: $weight-light;
+  font-weight: $weight-bold;
   margin-bottom: 0.4em;
 }
 
 h1 {
-  @include font-size(xlarge);
+  @include font-size(xxlarge);
 }
 
 h2 {
-  @include font-size(large);
+  @include font-size(xlarge);
 }
 
 h3 {
-  @include font-size(medium);
+  @include font-size(large);
 }
 
 h4 {
-  @include font-size(base);
+  @include font-size(medium);
 }
 
 article {
