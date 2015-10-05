@@ -76,8 +76,8 @@
     .photo-wide {
       @include large-up {
         max-width: none;
-        width: $site-width + gutter()*8;
-        left: gutter()*-4;
+        width: $site-width + gutter()*20;
+        left: gutter()*-10;
       }
     }
   }
