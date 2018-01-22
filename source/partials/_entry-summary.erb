@@ -1,7 +1,0 @@
-<article class="entry entry-summary">
-  <header class="entry-header">
-    <h3 class="entry-title title"><a href="<%= article.url %>"><%= article.title %></a></h3>
-    <div class="entry-meta"><time><%= article.date.strftime("%B %e, %Y") %></time></div>
-  </header>
-  <div class="entry-teaser"><%= Nokogiri::HTML(article.summary(225, '&hellip;')).text %></div>
-</article>

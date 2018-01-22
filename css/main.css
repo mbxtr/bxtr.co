@@ -1,0 +1,98 @@
+/* Font face */
+@font-face {
+    font-family: 'ibm_plex_serif';
+    src: url('../fonts/ibmplexserif-bold-webfont.woff2') format('woff2'),
+         url('../fonts/ibmplexserif-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ibm_plex_serif';
+    src: url('../fonts/ibmplexserif-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/ibmplexserif-bolditalic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ibm_plex_serif';
+    src: url('../fonts/ibmplexserif-text-webfont.woff2') format('woff2'),
+         url('../fonts/ibmplexserif-text-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ibm_plex_serif';
+    src: url('../fonts/ibmplexserif-textitalic-webfont.woff2') format('woff2'),
+         url('../fonts/ibmplexserif-textitalic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Base tags */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: #111;
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: 'ibm_plex_serif', serif;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: 0.025em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: #111;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+}
+
+.site__photo {
+    padding-top: 75%;
+    background-image: url('../images/me.jpg');
+    background-size: cover;
+    background-position-x: center;
+}
+
+.site__text {
+    padding: 7vw;
+}
+
+@media only screen and (min-width: 600px) {
+    .site {
+        flex-direction: row;
+    }
+
+    .site__photo {
+        position: fixed;
+        padding-top: 0;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .site__text {
+        width: 50%;
+        margin-left: 50%;
+    }
+}
