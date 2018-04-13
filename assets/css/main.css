@@ -95,4 +95,13 @@ a {
         width: 50%;
         margin-left: 50%;
     }
+
+    .site--article .site__photo {
+        width: 33.333333%;
+    }
+
+    .site--article .site__text {
+        width: 66.666666%;
+        margin-left: 33.333333%;
+    }
 }
