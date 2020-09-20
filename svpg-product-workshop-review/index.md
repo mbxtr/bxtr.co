@@ -3,6 +3,7 @@ layout: post.mustache
 title: SVPG Product Workshop Review
 date: 2018-12-04
 nice_date: April 12, 2018
+tags: published
 ---
 Recently, I attended the product management workshop, &ldquo;How to Create Products Customers Love&rdquo; by [Marty Cagan](https://twitter.com/cagan "Marty Cagan's Twitter"). As a new product manager, it solidified what had previously been a loosely-defined collection of ideas. It was a great experience and I&rsquo;m still processing all of the material and information.
 
