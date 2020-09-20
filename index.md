@@ -16,7 +16,7 @@ Turns out, sometimes I surprise even myself and end up write something!
 
 <ul>
 {%- for post in collections.published -%}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a> | <em>{{ post.data.nice_date }}<em></li>
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a> | <em>{{ post.data.nice_date }}</em></li>
 {%- endfor -%}
 </ul>
 
