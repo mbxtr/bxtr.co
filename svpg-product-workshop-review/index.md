@@ -1,5 +1,5 @@
 ---
-layout: post.mustache
+layout: post.njk
 title: SVPG Product Workshop Review
 date: 2018-12-04
 nice_date: April 12, 2018

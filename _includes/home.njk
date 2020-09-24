@@ -7,8 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="../assets/css/normalize.css">
-        <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/main.css">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60693108-1"></script>
@@ -21,18 +21,10 @@
         </script>
     </head>
     <body>
-        <div class="site site--article">
-            <div class="site__photo" style="background-image: url('cover.jpg');"></div>
+        <div class="site">
+            <div class="site__photo"></div>
             <div class="site__text">
-                <h1><em>{{title}}</em></h1>
-
-                <p><em>{{nice_date}}</em></p>
-
-                {{{content}}}
-
-                <p>—</p>
-
-                <p><em>Thoughts? Questions? Feel free to reach out to me at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a>.</em></p>
+                {{content | safe}}
             </div>
         </div>
     </body>

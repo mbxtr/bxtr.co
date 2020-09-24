@@ -1,5 +1,5 @@
 ---
-layout: home.mustache
+layout: home.njk
 title: Welcome to bxtr.co!
 ---
 # 👋 _Welcome!_
@@ -15,9 +15,9 @@ If you're looking to get in touch with my on other places across the web, you ca
 Turns out, sometimes I surprise even myself and end up write something!
 
 <ul>
-{%- for post in collections.published -%}
+{% for post in collections.published reversed %}
   <li><a href="{{ post.url }}">{{ post.data.title }}</a> | <em>{{ post.data.nice_date }}</em></li>
-{%- endfor -%}
+{% endfor %}
 </ul>
 
 Happy interneting! 🤓
