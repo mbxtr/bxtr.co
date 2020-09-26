@@ -1,3 +1,5 @@
+const typesetPlugin = require('eleventy-plugin-typeset');
+
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
 
@@ -6,4 +8,9 @@ module.exports = function(eleventyConfig) {
         "css",
         "jpg"
     ]);
+
+    eleventyConfig.addPlugin(typesetPlugin({
+        only: '.site__text',
+        disable: ['hyphenation']
+    }));
 };

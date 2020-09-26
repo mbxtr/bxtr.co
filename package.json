@@ -19,5 +19,8 @@
   "homepage": "https://github.com/mbxtr/bxtr.co#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0"
+  },
+  "dependencies": {
+    "eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset"
   }
 }
