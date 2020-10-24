@@ -52,7 +52,7 @@ img {
 h1 {
     font-size: 2.5em;
     font-weight: bold;
-    line-height: 1.1em;
+    line-height: 1.2em;
     letter-spacing: 0.025em;
     margin-top: 0;
     margin-bottom: 0.5em;
@@ -60,6 +60,14 @@ h1 {
 
 a {
     color: #111;
+}
+
+blockquote {
+    border-left: solid 3px #ddd;
+    color: #666;
+    margin-left: 1em;
+    margin-right: 2em;
+    padding-left: 1em;
 }
 
 .site {
