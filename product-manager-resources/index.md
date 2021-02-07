@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: Product Manager Resources
-date: 2020-02-07
+date: 2021-02-07
 nice_date: February 7, 2021
 tags: published
 ---
