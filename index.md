@@ -10,7 +10,7 @@ IRL, I enjoy spending time with my wife and our three kids. We're still trying t
 
 Professionally, I’m a product manager for [Bestow](https://bestow.com/ "Bestow"), where we’re making life insurance more accessible for everyone.
 
-If you're looking to get in touch with my on other places across the web, you can find me on <span style="white-space: nowrap;">📷 [Instagram](https://www.instagram.com/mbxtr "@mbxtr on Instagram"), <span style="white-space: nowrap;">🐦 [Twitter](https://www.twitter.com/mbxtr "@mbxtr on Twitter"), <span style="white-space: nowrap;">💼 [LinkedIn](http://www.linkedin.com/in/mbxtr/en)</span>, and by <span style="white-space: nowrap;">✉️ [email](mailto:matt.baxter@gmail.com)</span>.
+If you're looking to get in touch with my on other places across the web, you can find me on 📷&nbsp;[Instagram](https://www.instagram.com/mbxtr "@mbxtr on Instagram"), 🐦&nbsp;[Twitter](https://www.twitter.com/mbxtr "@mbxtr on Twitter"), 💼&nbsp;[LinkedIn](http://www.linkedin.com/in/mbxtr/en), and by ✉️&nbsp;[email](mailto:matt.baxter@gmail.com).
 
 Turns out, sometimes I surprise even myself and end up write something!
 
