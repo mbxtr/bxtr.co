@@ -2,7 +2,7 @@
 layout: home.njk
 title: Welcome to bxtr.co!
 ---
-# 👋 _Welcome!_
+# 👋 Welcome!
 
 I’m Matt Baxter — this is my personal space on the internet. From time to time I have grand visions of turning this into the home of my witty, humorous, and insightful weblog that launches me into internet fame. Eventually I chuckle at the thought, think to myself, “Nah, I’m good,” and go back to sipping on my artisinal, handcrafted, pourover cup of coffee.
 

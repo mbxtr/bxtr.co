@@ -31,6 +31,22 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'ibm_plex_sans';
+    src: url('../fonts/ibmplexsans-medium-webfont.woff2') format('woff2'),
+         url('../fonts/ibmplexsans-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ibm_plex_sans';
+    src: url('../fonts/ibmplexsans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/ibmplexsans-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* Base tags */
 
 * {
@@ -39,7 +55,7 @@
 
 html {
     color: #111;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.65;
     font-family: 'ibm_plex_serif', serif;
 }
@@ -49,13 +65,24 @@ img {
     max-width: 100%;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'ibm_plex_sans';
+}
+
 h1 {
     font-size: 2.5em;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.2em;
-    letter-spacing: 0.025em;
+    letter-spacing: 0.0em;
     margin-top: 0;
     margin-bottom: 0.5em;
+}
+
+h2, h3, h4 {
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-top: 1em;
+    margin-bottom: -0.25em;
 }
 
 a {
