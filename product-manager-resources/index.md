@@ -2,14 +2,14 @@
 layout: post.njk
 title: Product Manager Resources
 date: 2021-02-07
-nice_date: February 7, 2021
+nice_date: February 7, 2021 (updated September 21, 2022)
 tags: published
 ---
-I’ve had a people ask from time-to-time for articles that give a good overview of the product management role. After sharing the same links a few times, I decided putting them online where they could be easily referenced made sense. Hopefully this is helpful to others as well!
+I’ve had a people ask from time-to-time for articles that give a good overview of the product management role along with resources for improving as a product manager. This is a list of the must-read resources that I've found online and in books.
 
-## Articles about the role of the product manager
+## What is the role of a product manager?
 
-Ok, so the first link isn’t an article, but I’ve always loved this clip as it quickly communicates the essence of the product manager role. The following articles all give a well-rounded overview of what a product manager does.
+The first link isn’t an article, but I’ve always loved this clip as it quickly communicates the essence of the product manager role. The following articles all give a well-rounded overview of what a product manager does.
 
 * [Bud Tribble and Steve Jobs describing a Product Manager role in 1986 (YouTube)](https://www.youtube.com/watch?v=_43XPfJEqWc)
 * [What, exactly, is a Product Manager? | Mind the Product](https://www.mindtheproduct.com/what-exactly-is-a-product-manager/)
@@ -25,5 +25,14 @@ Lately I’ve found that most of the new things that I learn in product come fro
 * [John Cutler’s “Beautiful Mess”](https://cutlefish.substack.com/)
 * [Ken Norton’s “Bringing the Donuts”](https://kennethn.substack.com/)
 * [Gibson Biddle’s “Friends of Gib” Newsletter](https://gibsonbiddle.substack.com/)
+
+## Essential product management books
+
+If I could put together a class on product management, these books would be the required reading. Not all of them are strictly about product managment but they will absolutely help you improve as a product manager.
+
+* [Inspired by Marty Cagan](https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers-ebook-dp-B077NRB36N/dp/B077NRB36N/)
+* [Continuous Discovery by Teresa Torres](https://www.amazon.com/Continuous-Discovery-Habits-Discover-Products-ebook/dp/B094PVB97X/)
+* [Thinking in Bets by Annie Duke](https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions-ebook/dp/B074DG9LQF/)
+* [The Design of Everyday Things by Don Norman](https://www.amazon.com/Design-Everyday-Things-Revised-Expanded-ebook/dp/B00E257T6C/)
 
 _Photo by [eluoec](https://unsplash.com/@eluoec?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)._
