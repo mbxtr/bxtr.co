@@ -8,9 +8,9 @@ I’m Matt Baxter — this is my personal space on the internet. From time to ti
 
 IRL, I enjoy spending time with my wife and our three kids. We're still trying to figure out this whole “zone defense” thing. I’m also a big fan of that Jesus guy you may have heard about. I’m always up for a good coffee _(as you might have guessed from that delicious cup I mentioned earlier)_, beer, or whiskey and I quite enjoy games of both the “video” and “board” variety. I also have a bad habit of wearing skinny jeans _(or so I'm told)_.
 
-Professionally, I’m a product manager for [Bestow](https://bestow.com/ "Bestow"), where we’re making life insurance more accessible for everyone.
+Professionally, I’m on the product management team at [Bestow](https://bestow.com/ "Bestow"), where we’re making life insurance more accessible for everyone.
 
-If you're looking to get in touch with my on other places across the web, you can find me on 📷&nbsp;[Instagram](https://www.instagram.com/mbxtr "@mbxtr on Instagram"), 🐦&nbsp;[Twitter](https://www.twitter.com/mbxtr "@mbxtr on Twitter"), 💼&nbsp;[LinkedIn](http://www.linkedin.com/in/mbxtr/en), and by ✉️&nbsp;[email](mailto:matt.baxter@gmail.com).
+If you're looking to get in touch, hit me up on 📷&nbsp;[Instagram](https://www.instagram.com/mbxtr "@mbxtr on Instagram"), 🐦&nbsp;[Twitter](https://www.twitter.com/mbxtr "@mbxtr on Twitter"), 💼&nbsp;[LinkedIn](http://www.linkedin.com/in/mbxtr/en), or by ✉️&nbsp;[email](mailto:matt.baxter@gmail.com).
 
 Turns out, sometimes I surprise even myself and end up write something!
 
