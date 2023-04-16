@@ -2,7 +2,7 @@
 layout: post.njk
 title: Product Manager Resources
 date: 2021-02-07
-nice_date: February 7, 2021 (updated September 21, 2022)
+nice_date: February 7, 2021 (updated April 16, 2023)
 tags: published
 ---
 I’ve had a people ask from time-to-time for articles that give a good overview of the product management role along with resources for improving as a product manager. This is a list of the must-read resources that I've found online and in books.
@@ -21,18 +21,18 @@ The first link isn’t an article, but I’ve always loved this clip as it quick
 Lately I’ve found that most of the new things that I learn in product come from newsletters. The newsletters I’ve linked to below are those that I consistently glean insights from.
 
 * [Marty Cagan’s SVPG Newsletter](https://svpg.com/articles/)
-* [Lenny’s Newsletter](https://www.lennysnewsletter.com/subscribe) _(This is a paid newsletter at $150 per year which includes access to a Slack product community, product resources, and live interviews with product leaders — it’s totally worth it)_
+* [Lenny’s Newsletter](https://www.lennysnewsletter.com/subscribe)
 * [John Cutler’s “Beautiful Mess”](https://cutlefish.substack.com/)
 * [Ken Norton’s “Bringing the Donuts”](https://kennethn.substack.com/)
-* [Gibson Biddle’s “Friends of Gib” Newsletter](https://gibsonbiddle.substack.com/)
 
 ## Essential product management books
 
 If I could put together a class on product management, these books would be the required reading. Not all of them are strictly about product managment but they will absolutely help you improve as a product manager.
 
-* [Inspired by Marty Cagan](https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers-ebook-dp-B077NRB36N/dp/B077NRB36N/)
-* [Continuous Discovery by Teresa Torres](https://www.amazon.com/Continuous-Discovery-Habits-Discover-Products-ebook/dp/B094PVB97X/)
-* [Thinking in Bets by Annie Duke](https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions-ebook/dp/B074DG9LQF/)
-* [The Design of Everyday Things by Don Norman](https://www.amazon.com/Design-Everyday-Things-Revised-Expanded-ebook/dp/B00E257T6C/)
+* [_Inspired_ by Marty Cagan](https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers-ebook-dp-B077NRB36N/dp/B077NRB36N/)
+* [_Continuous Discovery_ by Teresa Torres](https://www.amazon.com/Continuous-Discovery-Habits-Discover-Products-ebook/dp/B094PVB97X/)
+* [_Thinking in Bets_ by Annie Duke](https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions-ebook/dp/B074DG9LQF/)
+* [_The Design of Everyday Things_ by Don Norman](https://www.amazon.com/Design-Everyday-Things-Revised-Expanded-ebook/dp/B00E257T6C/)
+* [_Build: An Unorthodox Guide to Making Things Worth Making_ by Tony Fadell](https://a.co/d/dXT6W1R)
 
 _Photo by [eluoec](https://unsplash.com/@eluoec?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)._
