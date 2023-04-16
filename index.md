@@ -10,9 +10,17 @@ IRL, I enjoy spending time with my wife and our three kids. We're still trying t
 
 Professionally, I’m on the product management team at [Bestow](https://bestow.com/ "Bestow"), where we’re making life insurance more accessible for everyone.
 
-If you're looking to get in touch, hit me up on 📷&nbsp;[Instagram](https://www.instagram.com/mbxtr "@mbxtr on Instagram"), 🐦&nbsp;[Twitter](https://www.twitter.com/mbxtr "@mbxtr on Twitter"), 💼&nbsp;[LinkedIn](http://www.linkedin.com/in/mbxtr/en), or by ✉️&nbsp;[email](mailto:matt.baxter@gmail.com).
+If you're looking to get in touch, here are a few places you might find me around the web:
 
-Turns out, sometimes I surprise even myself and end up write something!
+<ul class="emoji-list">
+  <li data-emoji="📷"><a href="https://www.instagram.com/mbxtr" title="@mbxtr on Instagram">Instagram</a></li>
+  <li data-emoji="🐘"><a href="https://mastodon.social/@mbxtr" title="@mbxtr@mastodon.social on Mastodon">Mastodon</a></li>
+  <li data-emoji="🐦"><a href="https://www.twitter.com/mbxtr" title="@mbxtr on Twitter">Twitter</a></li>
+  <li data-emoji="💼"><a href="http://www.linkedin.com/in/mbxtr/en" title="Connect on LinkedIn!">LinkedIn</a></li>
+  <li data-emoji="✉️"><a href="mailto:matt.baxter@gmail.com" title="Email me!">Email</a></li>
+</ul>
+
+Truly, I have no aspirations for creating an amazing blog, but sometimes its nice to have a place to write stuff, you know?
 
 <ul>
 {% for post in collections.published reversed %}

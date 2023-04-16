@@ -97,6 +97,17 @@ blockquote {
     padding-left: 1em;
 }
 
+.emoji-list {
+    list-style: none;
+    padding-left: 0.9em;
+}
+
+.emoji-list li:before {
+    display: inline;
+    content: attr(data-emoji);
+    margin-right: 0.4em;
+}
+
 .site {
     display: flex;
     flex-direction: column;
