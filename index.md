@@ -14,7 +14,7 @@ If you're looking to get in touch, here are a few places you might find me aroun
 
 <ul class="emoji-list">
   <li data-emoji="📷"><a href="https://www.instagram.com/mbxtr" title="@mbxtr on Instagram">Instagram</a></li>
-  <li data-emoji="🐘"><a href="https://mastodon.social/@mbxtr" title="@mbxtr@mastodon.social on Mastodon">Mastodon</a></li>
+  <li data-emoji="🐘"><a rel="me" href="https://mastodon.social/@mbxtr" title="@mbxtr@mastodon.social on Mastodon">Mastodon</a></li>
   <li data-emoji="🐦"><a href="https://www.twitter.com/mbxtr" title="@mbxtr on Twitter">Twitter</a></li>
   <li data-emoji="💼"><a href="http://www.linkedin.com/in/mbxtr/en" title="Connect on LinkedIn!">LinkedIn</a></li>
   <li data-emoji="✉️"><a href="mailto:matt.baxter@gmail.com" title="Email me!">Email</a></li>
