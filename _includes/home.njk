@@ -1,34 +1,44 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{title}}</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: base.njk
+---
+<body class="home">
+    <main class="site">
+        <header class="intro">
 
-        <link rel="stylesheet" href="assets/css/normalize.css">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60693108-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-60693108-1');
-        </script>
-    </head>
-    <body>
-        <div class="site">
-            <div class="site__photo"></div>
-            <div class="site__text">
-                {{content | safe}}
+            <p>👋 Welcome to my per­sonal space on the in­ter­net.</p>
+            <p>From time to time I have grand vi­sions of turn­ing this into the home of my witty, hu­mor­ous, and in­sight­ful weblog that launches me into in­ter­net fame. Eventually I chuckle at the thought, think to my­self, “Nah, I’m good,” and go back to sip­ping on my ar­tisi­nal, hand­crafted, pourover cup of cof­fee.</p>
+            <p>Professionally, I’m a prod­uct man­ager for Bestow, where we’re making life in­sur­ance more ac­ces­si­ble for every­one.</p>
+        </header>
+        <section class="container">
+            <h2 class="heading">Find me elsewhere</h2>
+            <div class="content">
+                <p>Pick your favorite social network; I’m probably there! I think I’m too old for TikTok, though. You can also reach out to me on old-fashioned email at matt.baxter@gmail.com.</p>
+                <ul class="icon-list">
+                    <li class="icon">X</li>
+                    <li class="icon">X</li>
+                </ul>
             </div>
-        </div>
-    </body>
-</html>
+        </section>
+        <section class="container">
+            <h2 class="heading">Very infrequent writing</h2>
+            <div class="content">
+                <p>I love the idea of writing. I really do. But reality kicks in and literal years go by in between posts.</p>
+                <ul class="link-list">
+                    <li class="link"><a href="#"><strong>Product Manager Resources</strong> &middot; <em>Feb 7th, 2021</em></a></li>
+                    <li class="link"><a href="#"><strong>Product Manager Resources</strong> &middot; <em>Feb 7th, 2021</em></a></li>
+                    <li class="link"><a href="#"><strong>Product Manager Resources</strong> &middot; <em>Feb 7th, 2021</em></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="heading">Guest appearances</h2>
+            <div class="content">
+                <p>I’ve had the opportunity to be interviewed a few times, primarily about product management.</p>
+                <ul class="link-list">
+                    <li class="link"><a href="#"><strong>10 Habits of Product Teams</strong> &middot; <em>medium.com</em></a></li>
+                    <li class="link"><a href="#"><strong>10 Habits of Product Teams</strong> &middot; <em>medium.com</em></a></li>
+                    <li class="link"><a href="#"><strong>10 Habits of Product Teams</strong> &middot; <em>medium.com</em></a></li>
+                </ul>
+            </div>
+        </section>
+</body>
