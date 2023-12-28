@@ -24,9 +24,9 @@ layout: base.njk
             <div class="content">
                 <p>I love the idea of writing. I really do. But reality kicks in and literal years go by in between posts.</p>
                 <ul class="link-list">
-                    <li><a href="#"><strong>Product Manager Resources</strong></a> &middot; <em>Feb 7th, 2021</em></li>
-                    <li><a href="#"><strong>Product Manager Resources</strong></a> &middot; <em>Feb 7th, 2021</em></li>
-                    <li><a href="#"><strong>Product Manager Resources</strong></a> &middot; <em>Feb 7th, 2021</em></li>
+                    {% for post in collections.published | reverse %}
+                    <li><a href="{{ post.url }}"><strong>{{ post.data.title }}</strong></a> &middot; <em>{{ post.data.nice_date }}</em></li>
+                    {% endfor %}
                 </ul>
             </div>
         </section>
@@ -35,10 +35,11 @@ layout: base.njk
             <div class="content">
                 <p>I’ve had the opportunity to be interviewed a few times, primarily about product management.</p>
                 <ul class="link-list">
-                    <li><a href="#"><strong>10 Habits of Product Teams</strong></a> &middot; <em>medium.com</em></li>
-                    <li><a href="#"><strong>10 Habits of Product Teams</strong></a> &middot; <em>medium.com</em></li>
-                    <li><a href="#"><strong>10 Habits of Product Teams</strong></a> &middot; <em>medium.com</em></li>
+                    {% for post in guestPosts %}
+                    <li><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a> &middot; <em>{{ post.source }}</em></li>
+                    {% endfor %}
                 </ul>
             </div>
         </section>
+    </main>
 </body>

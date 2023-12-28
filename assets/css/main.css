@@ -177,5 +177,9 @@ img {
                 background-color: #FDFFAE;
             }
         }
+
+        em {
+            font-size: var(--font-scale-4);
+        }
     }
 }
