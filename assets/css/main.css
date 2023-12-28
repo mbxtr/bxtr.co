@@ -30,6 +30,36 @@ html {
     }
 }
 
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-color: var(--color-light);
+
+    &:before, &:after {
+        display: block;
+        content: '';
+        position: relative;
+        width: 100%;
+        height: calc(2*var(--unit));
+        background-image: url('/assets/images/halftone_bg.png');
+        background-size: 4px 4px;
+    }
+
+    &:before {
+        border-top: solid calc(2*var(--unit)) var(--color-dark);
+        top: 0;
+    }
+
+    &:after {
+        border-bottom: solid calc(2*var(--unit)) var(--color-dark);
+        bottom: 0;
+    }
+}
+
 /*
     Typography and basic tags 
     ---------------------------------------------
@@ -68,36 +98,6 @@ img {
     Layout 
     ---------------------------------------------
 */
-
-html, body {
-    margin: 0;
-    height: 100%;
-}
-
-body {
-    position: relative;
-    background-color: var(--color-light);
-
-    &:before, &:after {
-        display: block;
-        content: '';
-        position: relative;
-        width: 100%;
-        height: calc(2*var(--unit));
-        background-image: url('/assets/images/halftone_bg.png');
-        background-size: 4px 4px;
-    }
-
-    &:before {
-        border-top: solid calc(2*var(--unit)) var(--color-dark);
-        top: 0;
-    }
-
-    &:after {
-        border-bottom: solid calc(2*var(--unit)) var(--color-dark);
-        bottom: 0;
-    }
-}
 
 .site {
     display: flex;
@@ -148,6 +148,34 @@ body {
     }
 
     .content {
-        margin: calc(4 * var(--unit)) calc(6 * var(--unit));
+        margin: 0 calc(6 * var(--unit));
+    }
+
+    .link-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 0.85em;
+        margin-bottom: 0;
+        margin-right: calc(-1 * 6 * var(--unit));
+
+        li {
+            margin: 0;
+            padding-top: 0.85em;
+            padding-bottom: 0.85em;
+            padding-right: calc(6 * var(--unit));
+            border-top: dashed 1px var(--color-dark);
+        }
+        
+        a {
+            text-decoration: none;
+            outline: solid 0.2em rgba(0,0,0,0);
+            border-radius: 0.1em;
+            transition: outline-color 0.2s, background-color 0.2s;
+
+            &:hover {
+                outline-color: #FDFFAE;
+                background-color: #FDFFAE;
+            }
+        }
     }
 }
