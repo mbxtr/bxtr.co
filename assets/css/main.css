@@ -38,6 +38,7 @@ html, body {
 body {
     position: relative;
     background-color: var(--color-light);
+    min-width: 320px;
 
     &:before, &:after {
         display: block;
@@ -87,6 +88,14 @@ strong {
 
 a {
     color: var(--color-dark);
+    outline: solid 0.3em rgba(0,0,0,0);
+    border-radius: 0.1em;
+    transition: outline-color 0.1s, background-color 0.1s;
+
+    &:hover {
+        outline-color: #FDFFAE;
+        background-color: #FDFFAE;
+    }
 }
 
 img {
@@ -107,13 +116,61 @@ img {
     padding-right: calc(4 * var(--unit));
 }
 
-.intro, .container {
+.header {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: calc(6 * var(--unit));
+    margin-top: calc(12 * var(--unit));
+    margin-bottom: calc(12 * var(--unit));
+}
+
+.profile {
+    position: relative;
+    display: inline-block;
+    width: calc(27 * var(--unit));
+    height: calc(27 * var(--unit));
+    transform: rotate(-3deg);
+
+    img {
+        border: solid 1px var(--color-dark);
+        border-radius: 25%;
+        width: 100%;
+    }
+
+    &:after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: calc(2 * var(--unit));
+        left: calc(2 * var(--unit));
+        z-index: -1;
+        background-image: url('/assets/images/halftone_bg.png');
+        background-size: 4px 4px;
+        border-radius: 25%;
+    }
+}
+
+.wordmark {
+    display: inline-block;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    letter-spacing: 0.15em;
+}
+
+.container {
     max-width: 700px;
     width: 100%;
     margin-bottom: calc(12 * var(--unit));
 }
 
-.container {
+.container--card {
     border-radius: 12px;
     border-style: solid;
     border-width: 1px;
@@ -168,18 +225,30 @@ img {
         
         a {
             text-decoration: none;
-            outline: solid 0.2em rgba(0,0,0,0);
-            border-radius: 0.1em;
-            transition: outline-color 0.2s, background-color 0.2s;
-
-            &:hover {
-                outline-color: #FDFFAE;
-                background-color: #FDFFAE;
-            }
         }
 
         em {
             font-size: var(--font-scale-4);
+        }
+    }
+
+    .icon-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 0.85em;
+        margin-bottom: 0;
+        margin-left: calc(-1 * 6 * var(--unit));
+
+        li {
+            float: left;
+            padding: calc(4 * var(--unit)) calc(6 * var(--unit));
+            border-right: dashed 1px var(--color-dark);
+        }
+
+        img {
+            width: calc(6 * var(--unit));
+            height: calc(6 * var(--unit));
+            vertical-align: text-top;
         }
     }
 }

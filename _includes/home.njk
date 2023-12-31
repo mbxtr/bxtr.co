@@ -3,23 +3,27 @@ layout: base.njk
 ---
 <body class="home">
     <main class="site">
-        <header class="intro">
-
-            <p>👋 Welcome to my per­sonal space on the in­ter­net.</p>
-            <p>From time to time I have grand vi­sions of turn­ing this into the home of my witty, hu­mor­ous, and in­sight­ful weblog that launches me into in­ter­net fame. Eventually I chuckle at the thought, think to my­self, “Nah, I’m good,” and go back to sip­ping on my ar­tisi­nal, hand­crafted, pourover cup of cof­fee.</p>
-            <p>Professionally, I’m a prod­uct man­ager for Bestow, where we’re making life in­sur­ance more ac­ces­si­ble for every­one.</p>
+        <header class="header">
+            <div class="profile"><img src="/assets/images/profile.jpg" /></div>
+            <div class="wordmark">BXTR</div>
         </header>
         <section class="container">
+            <p>👋 Welcome to my personal space on the internet.</p>
+            <p>From time to time I have grand visions of turning this into the home of my witty, humorous, and insightful weblog that launches me into internet fame. Eventually I chuckle at the thought, think to myself, “Nah, I’m good,” and go back to sipping on my artisinal, handcrafted, pourover cup of coffee.</p>
+            <p>Professionally, I’m a product manager for Bestow, where we’re making life insurance more accessible for everyone.</p>
+        </section>
+        <section class="container container--card">
             <h2 class="heading">Find me elsewhere</h2>
             <div class="content">
-                <p>Pick your favorite social network; I’m probably there! I think I’m too old for TikTok, though. You can also reach out to me on old-fashioned email at matt.baxter@gmail.com.</p>
+                <p>Pick your favorite social network; I’m probably there! I think I’m too old for TikTok, though. You can also reach out to me on old-fashioned email at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a>.</p>
                 <ul class="icon-list">
-                    <li class="icon">X</li>
-                    <li class="icon">X</li>
+                    {% for social in socialNetworks %}
+                    <li><a href="{{ social.url }}"><img src="{{ social.icon }}" alt="{{ social.name }}" /></a></li>
+                    {% endfor %}
                 </ul>
             </div>
         </section>
-        <section class="container">
+        <section class="container container--card">
             <h2 class="heading">Very infrequent writing</h2>
             <div class="content">
                 <p>I love the idea of writing. I really do. But reality kicks in and literal years go by in between posts.</p>
@@ -30,7 +34,7 @@ layout: base.njk
                 </ul>
             </div>
         </section>
-        <section class="container">
+        <section class="container container--card">
             <h2 class="heading">Guest appearances</h2>
             <div class="content">
                 <p>I’ve had the opportunity to be interviewed a few times, primarily about product management.</p>
