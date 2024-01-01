@@ -170,26 +170,26 @@ hr {
     width: calc(27 * var(--unit));
     height: calc(27 * var(--unit));
     transform: rotate(-3deg);
+}
 
-    img {
-        border: solid 1px var(--color-dark);
-        border-radius: 25%;
-        width: 100%;
-    }
+.profile img {
+    border: solid 1px var(--color-dark);
+    border-radius: 25%;
+    width: 100%;
+}
 
-    &:after {
-        display: block;
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        top: calc(2 * var(--unit));
-        left: calc(2 * var(--unit));
-        z-index: -1;
-        background-image: url('/assets/images/halftone_bg.png');
-        background-size: 4px 4px;
-        border-radius: 25%;
-    }
+.profile:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: calc(2 * var(--unit));
+    left: calc(2 * var(--unit));
+    z-index: -1;
+    background-image: url('/assets/images/halftone_bg.png');
+    background-size: 4px 4px;
+    border-radius: 25%;
 }
 
 .wordmark {
@@ -203,20 +203,20 @@ hr {
 .header--small {
     justify-content: left;
     gap: calc(3 * var(--unit));
+}
 
-    .profile {
-        width: calc(13.5 * var(--unit));
-        height: calc(13.5 * var(--unit));
+.header--small .profile {
+    width: calc(13.5 * var(--unit));
+    height: calc(13.5 * var(--unit));
 
-        &:after {
-            top: calc(1 * var(--unit));
-            left: calc(1 * var(--unit));
-        }
+    &:after {
+        top: calc(1 * var(--unit));
+        left: calc(1 * var(--unit));
     }
+}
 
-    .wordmark {
-        font-size: calc(10 * var(--unit));
-    }
+.header--small .wordmark {
+    font-size: calc(10 * var(--unit));
 }
 
 .container {
@@ -233,86 +233,85 @@ hr {
     background-color: var(--color-light);
     position: relative;
     margin-bottom: calc(12 * var(--unit));
+}
 
-    &:after {
-        display: block;
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        top: calc(2 * var(--unit));
-        left: calc(2 * var(--unit));
-        z-index: -1;
-        background-image: url('/assets/images/halftone_bg.png');
-        background-size: 4px 4px;
-        border-radius: 12px;
-    }
+.container--card:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: calc(2 * var(--unit));
+    left: calc(2 * var(--unit));
+    z-index: -1;
+    background-image: url('/assets/images/halftone_bg.png');
+    background-size: 4px 4px;
+    border-radius: 12px;
+}
 
-    .heading {
-        font-weight: 600;
-        font-size: var(--font-scale-4);
-        text-transform: uppercase;
-        background-color: var(--color-dark);
-        color: var(--color-light);
-        letter-spacing: 0.08em;
-        margin-top: 0;
-        border-radius: 11px 11px 0 0;
-        padding: calc(4 * var(--unit)) calc(6 * var(--unit));
-    }
+.container--card .heading {
+    font-weight: 600;
+    font-size: var(--font-scale-4);
+    text-transform: uppercase;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    letter-spacing: 0.08em;
+    margin-top: 0;
+    border-radius: 11px 11px 0 0;
+    padding: calc(4 * var(--unit)) calc(6 * var(--unit));
+}
 
-    .content {
-        margin: 0 calc(6 * var(--unit));
-    }
+.container--card .content {
+    margin: 0 calc(6 * var(--unit));
+}
 
-    .link-list {
-        list-style-type: none;
-        padding-left: 0;
-        margin-top: 0.85em;
-        margin-bottom: 0;
-        margin-right: calc(-1 * 6 * var(--unit));
+.link-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0.85em;
+    margin-bottom: 0;
+    margin-right: calc(-1 * 6 * var(--unit));
+}
 
-        li {
-            margin: 0;
-            padding-top: 0.85em;
-            padding-bottom: 0.85em;
-            padding-right: calc(6 * var(--unit));
-            border-top: dashed 1px var(--color-dark);
-        }
-        
-        a {
-            text-decoration: none;
-        }
+.link-list li {
+    margin: 0;
+    padding-top: 0.85em;
+    padding-bottom: 0.85em;
+    padding-right: calc(6 * var(--unit));
+    border-top: dashed 1px var(--color-dark);
+}
 
-        em {
-            font-size: var(--font-scale-4);
-        }
-    }
+.link-list a {
+    text-decoration: none;
+}
+
+.link-list em {
+    font-size: var(--font-scale-4);
 }
 
 .icon-list {
     list-style-type: none;
     padding-left: 0;
+}
 
-    li {
-        float: left;
-        padding-right: calc(4 * var(--unit));
-    }
+.icon-list li {
+    float: left;
+    padding-right: calc(4 * var(--unit));
+}
 
-    img {
-        width: calc(6 * var(--unit));
-        height: calc(6 * var(--unit));
-        vertical-align: text-top;
-    }
+.icon-list img {
+    width: calc(6 * var(--unit));
+    height: calc(6 * var(--unit));
+    vertical-align: text-top;
 }
 
 .icon-list--dashed {
     margin-top: 0.85em;
     margin-bottom: 0;
     margin-left: calc(-1 * 6 * var(--unit));
+}
 
-    li {
-        padding: calc(4 * var(--unit)) calc(6 * var(--unit));
-        border-right: dashed 1px var(--color-dark);
-    }
-
+.icon-list--dashed li {
+    padding: calc(4 * var(--unit)) calc(6 * var(--unit));
+    border-right: dashed 1px var(--color-dark);
 }

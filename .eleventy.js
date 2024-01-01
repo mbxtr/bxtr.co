@@ -13,4 +13,8 @@ module.exports = function(eleventyConfig) {
         only: '.site__text',
         disable: ['hyphenation']
     }));
+
+    eleventyConfig.setServerOptions({
+        showAllHosts: true,
+      });
 };
