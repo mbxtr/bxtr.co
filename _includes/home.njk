@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 ---
-<body class="home">
+<body>
     <main class="site">
         <header class="header">
             <div class="profile"><img src="/assets/images/profile.jpg" /></div>
@@ -16,7 +16,7 @@ layout: base.njk
             <h2 class="heading">Find me elsewhere</h2>
             <div class="content">
                 <p>Pick your favorite social network; I’m probably there! I think I’m too old for TikTok, though. You can also reach out to me on old-fashioned email at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a>.</p>
-                <ul class="icon-list">
+                <ul class="icon-list icon-list--dashed">
                     {% for social in socialNetworks %}
                     <li><a href="{{ social.url }}"><img src="{{ social.icon }}" alt="{{ social.name }}" /></a></li>
                     {% endfor %}

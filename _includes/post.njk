@@ -2,18 +2,29 @@
 layout: base.njk
 ---
 <body>
-    <div class="site site--article">
-        <div class="site__photo" style="background-image: url('cover.jpg');"></div>
-        <div class="site__text">
+    <main class="site">
+        <header class="header header--small">
+            <div class="profile"><img src="/assets/images/profile.jpg" /></div>
+            <div class="wordmark">BXTR</div>
+        </header>
+        <section class="container">
             <h1>{{title}}</h1>
-
-            <p><em>{{nice_date}}</em></p>
-
+            
             {{content | safe}}
-
-            <p>—</p>
-
-            <p><em>Thoughts? Questions? Feel free to reach out to me at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a>.</em></p>
-        </div>
-    </div>
+        </section>
+        <hr />
+        <section class="container">
+            <p class="small"><em>Published by <strong>Matt Baxter</strong> on <strong>{{ nice_date }}</strong>.</em></p>
+            <p class="small"><em>Thoughts or questions? Email me at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a> or reach out on your favorite social network.</em></p>
+            <ul class="icon-list">
+                {% for social in socialNetworks %}
+                <li><a href="{{ social.url }}"><img src="{{ social.icon }}" alt="{{ social.name }}" /></a></li>
+                {% endfor %}
+            </ul>
+        </section>
+        <hr />
+        <section class="container">
+            <p class="small"><a href="/"><em>Back to bxtr.co ↩</em></a></p>
+        </section>
+    </main>
 </body>

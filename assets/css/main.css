@@ -4,10 +4,10 @@
     --small-screen-font-size: 0.9em;
     --large-screen-font-size: 1.25em;
 
-    --font-scale-1: 2.25rem;
-    --font-scale-2: 1.7171rem;
-    --font-scale-3: 1.3104rem;
-    --font-scale-4: .7631rem;
+    --font-scale-1: 1.75rem;
+    --font-scale-2: 1.4522em;
+    --font-scale-3: 1.2051em;
+    --font-scale-4: .7631rem;;
 
     --color-dark: #000000;
     --color-light: #FFFEFA;
@@ -19,7 +19,7 @@
 
 html {
     font-size: var(--small-screen-font-size);
-    line-height: 1.5;
+    line-height: 1.6;
     font-family: 'Inter', sans-serif;
     color: var(--color-dark);
 }
@@ -68,18 +68,42 @@ body {
 
 h1, h2, h3 {
     font-family: 'Inter Tight', sans-serif;
-    font-weight: 900;
-    margin-top: 0.85em;
+    margin-top: 1em;
     margin-bottom: 0;
+    line-height: 1.4;
 }
 
-h1 { font-size: var(--font-scale-1); }
-h2 { font-size: var(--font-scale-2); }
-h3 { font-size: var(--font-scale-3); }
+h1 { 
+    margin-top: 0;
+    font-size: var(--font-scale-1);
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+h2 { 
+    font-size: var(--font-scale-2); 
+    font-weight: 600;
+}
+h3 { 
+    font-size: var(--font-scale-3); 
+    font-weight: 600;
+}
+
+.small, small {
+    font-size: var(--font-scale-4);
+}
 
 p {
     margin-top: 0.85em;
     margin-bottom: 0.85em;
+}
+
+blockquote {
+    border-left: solid 4px rgba(0,0,0,0.1);;
+    margin-top: 0.85em;
+    margin-bottom: 0.85em;
+    margin-left: calc(4 * var(--unit));
+    margin-right: calc(4 * var(--unit));
+    padding-left: calc(4 * var(--unit));
 }
 
 strong {
@@ -103,8 +127,19 @@ img {
     max-width: 100%;
 }
 
+hr {
+    border: none;
+    max-width: 700px;
+    width: 100%;
+    height: 4px;
+    background-image: url('/assets/images/halftone_bg.png');
+    background-size: 4px 4px;
+    margin-top: 0;
+    margin-bottom: calc(8 * var(--unit));
+}
+
 /*
-    Layout 
+    Layout and components
     ---------------------------------------------
 */
 
@@ -114,6 +149,7 @@ img {
     align-items: center;
     padding-left: calc(4 * var(--unit));
     padding-right: calc(4 * var(--unit));
+    padding-bottom: calc(12 * var(--unit));
 }
 
 .header {
@@ -160,14 +196,33 @@ img {
     display: inline-block;
     font-family: 'Inter Tight', sans-serif;
     font-weight: 900;
-    font-size: 4rem;
+    font-size: calc(20 * var(--unit));
     letter-spacing: 0.15em;
+}
+
+.header--small {
+    justify-content: left;
+    gap: calc(3 * var(--unit));
+
+    .profile {
+        width: calc(13.5 * var(--unit));
+        height: calc(13.5 * var(--unit));
+
+        &:after {
+            top: calc(1 * var(--unit));
+            left: calc(1 * var(--unit));
+        }
+    }
+
+    .wordmark {
+        font-size: calc(10 * var(--unit));
+    }
 }
 
 .container {
     max-width: 700px;
     width: 100%;
-    margin-bottom: calc(12 * var(--unit));
+    margin-bottom: calc(8 * var(--unit));
 }
 
 .container--card {
@@ -177,6 +232,7 @@ img {
     border-color: var(--color-dark);
     background-color: var(--color-light);
     position: relative;
+    margin-bottom: calc(12 * var(--unit));
 
     &:after {
         display: block;
@@ -231,24 +287,32 @@ img {
             font-size: var(--font-scale-4);
         }
     }
+}
 
-    .icon-list {
-        list-style-type: none;
-        padding-left: 0;
-        margin-top: 0.85em;
-        margin-bottom: 0;
-        margin-left: calc(-1 * 6 * var(--unit));
+.icon-list {
+    list-style-type: none;
+    padding-left: 0;
 
-        li {
-            float: left;
-            padding: calc(4 * var(--unit)) calc(6 * var(--unit));
-            border-right: dashed 1px var(--color-dark);
-        }
-
-        img {
-            width: calc(6 * var(--unit));
-            height: calc(6 * var(--unit));
-            vertical-align: text-top;
-        }
+    li {
+        float: left;
+        padding-right: calc(4 * var(--unit));
     }
+
+    img {
+        width: calc(6 * var(--unit));
+        height: calc(6 * var(--unit));
+        vertical-align: text-top;
+    }
+}
+
+.icon-list--dashed {
+    margin-top: 0.85em;
+    margin-bottom: 0;
+    margin-left: calc(-1 * 6 * var(--unit));
+
+    li {
+        padding: calc(4 * var(--unit)) calc(6 * var(--unit));
+        border-right: dashed 1px var(--color-dark);
+    }
+
 }
