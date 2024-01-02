@@ -10,11 +10,10 @@ module.exports = function(eleventyConfig) {
     ]);
 
     eleventyConfig.addPlugin(typesetPlugin({
-        only: '.site__text',
-        disable: ['hyphenation']
+        disable: ['hyphenate']
     }));
 
     eleventyConfig.setServerOptions({
         showAllHosts: true,
-      });
+    });
 };
