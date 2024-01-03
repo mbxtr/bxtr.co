@@ -12,7 +12,8 @@
     {
         "name": "Mastodon",
         "url": "https://www.mastodon.social/@mbxtr",
-        "icon": "/assets/images/icon-mastodon.svg"
+        "icon": "/assets/images/icon-mastodon.svg",
+        "rel": "me"
     },
     {
         "name": "Threads",

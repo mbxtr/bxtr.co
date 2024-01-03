@@ -22,7 +22,7 @@ layout: base.njk
                 <p>Pick your favorite social network — I’m probably there. I think I’m too old for TikTok, though (that's what the kids keep telling me). You can also reach out to me on old-fashioned email at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a>.</p>
                 <ul class="icon-list icon-list--dashed">
                     {% for social in socialNetworks %}
-                    <li><a href="{{ social.url }}"><img src="{{ social.icon }}" alt="{{ social.name }}" /></a></li>
+                    <li><a href="{{ social.url }}" {% if social.rel %}rel="{{social.rel}}"{% endif %}><img src="{{ social.icon }}" alt="{{ social.name }}" /></a></li>
                     {% endfor %}
                 </ul>
             </div>
