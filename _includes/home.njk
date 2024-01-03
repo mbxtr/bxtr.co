@@ -17,17 +17,6 @@ layout: base.njk
             </div>
         </section>
         <section class="container container--card">
-            <h2 class="heading">Find me elsewhere</h2>
-            <div class="content">
-                <p>Pick your favorite social network — I’m probably there. I think I’m too old for TikTok, though (that's what the kids keep telling me). You can also reach out to me on old-fashioned email at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a>.</p>
-                <ul class="icon-list icon-list--dashed">
-                    {% for social in socialNetworks %}
-                    <li><a href="{{ social.url }}" {% if social.rel %}rel="{{social.rel}}"{% endif %}><img src="{{ social.icon }}" alt="{{ social.name }}" /></a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </section>
-        <section class="container container--card">
             <h2 class="heading">Very infrequent writing</h2>
             <div class="content">
                 <p>I love the idea of writing. I really do. But reality kicks in and literal <em>years</em> go by in between posts.</p>
@@ -45,6 +34,17 @@ layout: base.njk
                 <ul class="link-list">
                     {% for post in guestPosts %}
                     <li><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a> &middot; <em>{{ post.source }}</em></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+        <section class="container container--card">
+            <h2 class="heading">Find me elsewhere</h2>
+            <div class="content">
+                <p>Pick your favorite social network — I’m probably there. I think I’m too old for TikTok, though (that's what the kids keep telling me). You can also reach out to me on old-fashioned email at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a>.</p>
+                <ul class="icon-list icon-list--dashed">
+                    {% for social in socialNetworks %}
+                    <li><a href="{{ social.url }}" {% if social.rel %}rel="{{social.rel}}"{% endif %}><img src="{{ social.icon }}" alt="{{ social.name }}" /></a></li>
                     {% endfor %}
                 </ul>
             </div>
