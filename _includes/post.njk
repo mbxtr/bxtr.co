@@ -1,42 +1,30 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{title}}</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="../assets/css/normalize.css">
-        <link rel="stylesheet" href="../assets/css/main.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60693108-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-60693108-1');
-        </script>
-    </head>
-    <body>
-        <div class="site site--article">
-            <div class="site__photo" style="background-image: url('cover.jpg');"></div>
-            <div class="site__text">
-                <h1>{{title}}</h1>
-
-                <p><em>{{nice_date}}</em></p>
-
-                {{content | safe}}
-
-                <p>—</p>
-
-                <p><em>Thoughts? Questions? Feel free to reach out to me at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a>.</em></p>
-            </div>
-        </div>
-    </body>
-</html>
+---
+layout: base.njk
+---
+<body>
+    <main class="site">
+        <header class="header header--small">
+            <div class="profile"><img src="/assets/images/profile.jpg" /></div>
+            <div class="wordmark">BXTR</div>
+        </header>
+        <article class="container">
+            <h1>{{title}}</h1>
+            
+            {{content | safe}}
+        </article>
+        <hr />
+        <section class="container">
+            <p class="small"><em>Published by <strong>Matt Baxter</strong> on <strong>{{ nice_date }}</strong>.</em></p>
+            <p class="small"><em>Thoughts or questions? Email me at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a> or reach out on your favorite social network.</em></p>
+            <ul class="icon-list">
+                {% for social in socialNetworks %}
+                <li><a href="{{ social.url }}"><img src="{{ social.icon }}" alt="{{ social.name }}" /></a></li>
+                {% endfor %}
+            </ul>
+        </section>
+        <hr />
+        <section class="container">
+            <p class="small"><a href="/"><em>Back to bxtr.co &hookleftarrow;&#xfe0e;</em></a></p>
+        </section>
+    </main>
+</body>

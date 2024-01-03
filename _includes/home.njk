@@ -1,34 +1,53 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{title}}</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="assets/css/normalize.css">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60693108-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-60693108-1');
-        </script>
-    </head>
-    <body>
-        <div class="site">
-            <div class="site__photo"></div>
-            <div class="site__text">
-                {{content | safe}}
+---
+layout: base.njk
+---
+<body>
+    <main class="site">
+        <header class="header">
+            <div class="profile"><img src="/assets/images/profile.jpg" /></div>
+            <div class="wordmark">BXTR</div>
+        </header>
+        <section class="container container--card">
+            <h2 class="heading">Greetings</h2>
+            <div class="content">
+                <p>Hello, internet traveler. I'm Matt Baxter and this is my personal website. I don't do a whole lot here besides redesign it every few years and very infrequently write something. But, I find it fun to have my own personal corner of the internet to do what I want with it.</p>
+                <p>When I'm not browsing the interwebs (do people still do that?) I'm usally spending time with my wife and kiddos or being very snobby about coffee. I'm all about that Jesus guy and enjoy talking theology. I also enjoy playing games of all sorts — video games, board games, and sportsball type games.</p>
+                <p>Professionally I'm a product leader at Bestow, building a modern platform for insurance companies looking to make life insurance more accessible to everyone.</p>
+                <p>Enjoy your stay in my corner of the internet!</p>
             </div>
-        </div>
-    </body>
-</html>
+        </section>
+        <section class="container container--card">
+            <h2 class="heading">Very infrequent writing</h2>
+            <div class="content">
+                <p>I love the idea of writing. I really do. But reality kicks in and literal <em>years</em> go by in between posts.</p>
+                <ul class="link-list">
+                    {% for post in collections.published | reverse %}
+                    <li><a href="{{ post.url }}"><strong>{{ post.data.title }}</strong></a> &middot; <em>{{ post.data.nice_date }}</em></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+        <section class="container container--card">
+            <h2 class="heading">Guest appearances</h2>
+            <div class="content">
+                <p>I’ve had the opportunity to be interviewed a few times, primarily about product management. I always enjoy the chance to share what I've learned over the years.</p>
+                <ul class="link-list">
+                    {% for post in guestPosts %}
+                    <li><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a> &middot; <em>{{ post.source }}</em></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+        <section class="container container--card">
+            <h2 class="heading">Find me elsewhere</h2>
+            <div class="content">
+                <p>Pick your favorite social network — I’m probably there. I think I’m too old for TikTok, though (that's what the kids keep telling me). You can also reach out to me on old-fashioned email at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a>.</p>
+                <ul class="icon-list icon-list--dashed">
+                    {% for social in socialNetworks %}
+                    <li><a href="{{ social.url }}" {% if social.rel %}rel="{{social.rel}}"{% endif %}><img src="{{ social.icon }}" alt="{{ social.name }}" /></a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>

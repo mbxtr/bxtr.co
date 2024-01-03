@@ -34,5 +34,3 @@ If I could put together a class on product management, these books would be the 
 * [_Thinking in Bets_ by Annie Duke](https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions-ebook/dp/B074DG9LQF/)
 * [_The Design of Everyday Things_ by Don Norman](https://www.amazon.com/Design-Everyday-Things-Revised-Expanded-ebook/dp/B00E257T6C/)
 * [_Build: An Unorthodox Guide to Making Things Worth Making_ by Tony Fadell](https://a.co/d/dXT6W1R)
-
-_Photo by [eluoec](https://unsplash.com/@eluoec?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)._

@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/mbxtr/",
+        "icon": "/assets/images/icon-instagram.svg"
+    },
+    {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mbxtr/",
+        "icon": "/assets/images/icon-linkedin.svg"
+    },
+    {
+        "name": "Mastodon",
+        "url": "https://www.mastodon.social/@mbxtr",
+        "icon": "/assets/images/icon-mastodon.svg",
+        "rel": "me"
+    },
+    {
+        "name": "Threads",
+        "url": "https://www.threads.net/@mbxtr",
+        "icon": "/assets/images/icon-threads.svg"
+    },
+    {
+        "name": "X (Twitter)",
+        "url": "https://twitter.com/mbxtr",
+        "icon": "/assets/images/icon-twitter.svg"
+    }
+]
