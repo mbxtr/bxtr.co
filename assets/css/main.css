@@ -4,7 +4,12 @@
     --small-screen-font-size: 0.9em;
     --large-screen-font-size: 1.25em;
 
-    --max-width: 40rem;
+    --max-width: 36rem;
+    --margin-xlarge: calc(16 * var(--unit));
+    --margin-large: calc(12 * var(--unit));
+    --margin-medium: calc(8 * var(--unit));
+    --margin-small: calc(6 * var(--unit));
+    --margin-xsmall: calc(4 * var(--unit));
 
     --font-scale-1: 1.75rem;
     --font-scale-2: 1.4522em;
@@ -12,7 +17,8 @@
     --font-scale-4: .7631rem;;
 
     --color-dark: #000000;
-    --color-light: #FFFEFA;
+    --color-light-1: #FDF6E3;
+    --color-light-2: #FEF8EB;
 }
 
 * {
@@ -39,7 +45,7 @@ html, body {
 
 body {
     position: relative;
-    background-color: var(--color-light);
+    background-color: var(--color-light-1);
     min-width: 320px;
 
     &:before, &:after {
@@ -79,6 +85,7 @@ h1 {
     margin-top: 0;
     font-size: var(--font-scale-1);
     font-weight: 900;
+    margin-bottom: 1em;
 }
 h2 { 
     font-size: var(--font-scale-2); 
@@ -102,9 +109,9 @@ blockquote {
     border-left: solid 4px rgba(0,0,0,0.1);;
     margin-top: 0.85em;
     margin-bottom: 0.85em;
-    margin-left: calc(4 * var(--unit));
-    margin-right: calc(4 * var(--unit));
-    padding-left: calc(4 * var(--unit));
+    margin-left: var(--margin-xsmall);
+    margin-right: var(--margin-xsmall);
+    padding-left: var(--margin-xsmall);
 }
 
 strong {
@@ -136,7 +143,7 @@ hr {
     background-image: url('/assets/images/halftone_bg.png');
     background-size: 4px 4px;
     margin-top: 0;
-    margin-bottom: calc(8 * var(--unit));
+    margin-bottom: var(--margin-medium);
 }
 
 /*
@@ -144,13 +151,17 @@ hr {
     ---------------------------------------------
 */
 
+.page-post {
+    background-color: var(--color-light-2);
+}
+
 .site {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: calc(4 * var(--unit));
-    padding-right: calc(4 * var(--unit));
-    padding-bottom: calc(12 * var(--unit));
+    padding-left: var(--margin-small);
+    padding-right: var(--margin-small);
+    padding-bottom: var(--margin-large);
 }
 
 .header {
@@ -160,9 +171,9 @@ hr {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: calc(6 * var(--unit));
-    margin-top: calc(12 * var(--unit));
-    margin-bottom: calc(12 * var(--unit));
+    gap: var(--margin-small);
+    margin-top: var(--margin-large);
+    margin-bottom: var(--margin-large);
 }
 
 .profile {
@@ -223,7 +234,7 @@ hr {
 .container {
     max-width: var(--max-width);
     width: 100%;
-    margin-bottom: calc(8 * var(--unit));
+    margin-bottom: var(--margin-large);
 }
 
 .container--card {
@@ -231,9 +242,9 @@ hr {
     border-style: solid;
     border-width: 1px;
     border-color: var(--color-dark);
-    background-color: var(--color-light);
+    background-color: var(--color-light-2);
     position: relative;
-    margin-bottom: calc(12 * var(--unit));
+    margin-bottom: var(--margin-xlarge);
 }
 
 .container--card:after {
@@ -255,15 +266,23 @@ hr {
     font-size: var(--font-scale-4);
     text-transform: uppercase;
     background-color: var(--color-dark);
-    color: var(--color-light);
+    color: var(--color-light-2);
     letter-spacing: 0.08em;
     margin-top: 0;
     border-radius: 11px 11px 0 0;
-    padding: calc(4 * var(--unit)) calc(6 * var(--unit));
+    padding: var(--margin-small) var(--margin-medium);
 }
 
 .container--card .content {
-    margin: 0 calc(6 * var(--unit));
+    margin: var(--margin-small) var(--margin-medium);
+}
+
+.container--card .content *:first-child {
+    margin-top: 0;
+}
+
+.container--card .content *:last-child {
+    margin-bottom: 0;
 }
 
 .link-list {
@@ -271,15 +290,19 @@ hr {
     padding-left: 0;
     margin-top: 0.85em;
     margin-bottom: 0;
-    margin-right: calc(-1 * 6 * var(--unit));
+    margin-right: calc(-1 * var(--margin-medium));
 }
 
 .link-list li {
     margin: 0;
     padding-top: 0.85em;
     padding-bottom: 0.85em;
-    padding-right: calc(6 * var(--unit));
+    padding-right: var(--margin-medium);
     border-top: dashed 1px var(--color-dark);
+}
+
+.link-list li:last-child {
+    padding-bottom: 0;
 }
 
 .link-list a {
@@ -297,7 +320,7 @@ hr {
 
 .icon-list li {
     float: left;
-    padding-right: calc(4 * var(--unit));
+    padding-right: var(--margin-xsmall);
 }
 
 .icon-list img {
@@ -309,10 +332,10 @@ hr {
 .icon-list--dashed {
     margin-top: 0.85em;
     margin-bottom: 0;
-    margin-left: calc(-1 * 6 * var(--unit));
+    margin-left: calc(-1 * var(--margin-small));
 }
 
 .icon-list--dashed li {
-    padding: calc(4 * var(--unit)) calc(6 * var(--unit));
+    padding: var(--margin-xsmall) var(--margin-small);
     border-right: dashed 1px var(--color-dark);
 }
