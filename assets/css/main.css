@@ -11,7 +11,7 @@
     --margin-small: calc(6 * var(--unit));
     --margin-xsmall: calc(4 * var(--unit));
 
-    --font-scale-1: 1.75rem;
+    --font-scale-1: 1.9rem;
     --font-scale-2: 1.4522em;
     --font-scale-3: 1.2051em;
     --font-scale-4: .7631rem;;
@@ -75,25 +75,23 @@ body {
 */
 
 h1, h2, h3 {
-    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-top: 1em;
     margin-bottom: 0;
     line-height: 1.4;
+    font-weight: 600;
 }
 
 h1 { 
     margin-top: 0;
     font-size: var(--font-scale-1);
-    font-weight: 900;
     margin-bottom: 1em;
 }
 h2 { 
-    font-size: var(--font-scale-2); 
-    font-weight: 600;
+    font-size: var(--font-scale-2);
 }
 h3 { 
-    font-size: var(--font-scale-3); 
-    font-weight: 600;
+    font-size: var(--font-scale-3);
 }
 
 .small, small {
@@ -120,13 +118,13 @@ strong {
 
 a {
     color: var(--color-dark);
-    outline: solid 0.3em rgba(0,0,0,0);
+    outline: solid 0.15em rgba(0,0,0,0);
     border-radius: 0.1em;
     transition: outline-color 0.1s, background-color 0.1s;
 
     &:hover {
-        outline-color: #FDFFAE;
-        background-color: #FDFFAE;
+        outline-color: rgba(0,0,0,0.1);
+        background-color: rgba(0,0,0,0.1);
     }
 }
 
@@ -206,8 +204,8 @@ hr {
 
 .wordmark {
     display: inline-block;
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
     font-size: calc(20 * var(--unit));
     letter-spacing: 0.15em;
 }
@@ -321,6 +319,10 @@ hr {
 .icon-list li {
     float: left;
     padding-right: var(--margin-xsmall);
+}
+
+.icon-list a {
+    outline-width: 0.3em;
 }
 
 .icon-list img {
