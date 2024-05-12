@@ -17,8 +17,10 @@
     --font-scale-4: .7631rem;;
 
     --color-dark: #000000;
-    --color-light-1: #FDF6E3;
-    --color-light-2: #FEF8EB;
+    --color-light: #FEFEFA;
+    --color-link-highlight: #FFFF8A;
+
+    --bg-halftone: url('/assets/images/halftone_bg.png');
 }
 
 * {
@@ -45,7 +47,7 @@ html, body {
 
 body {
     position: relative;
-    background-color: var(--color-light-1);
+    background-color: var(--color-light);
     min-width: 320px;
 
     &:before, &:after {
@@ -54,7 +56,7 @@ body {
         position: relative;
         width: 100%;
         height: calc(2*var(--unit));
-        background-image: url('/assets/images/halftone_bg.png');
+        background-image: var(--bg-halftone);
         background-size: 4px 4px;
     }
 
@@ -119,12 +121,11 @@ strong {
 a {
     color: var(--color-dark);
     outline: solid 0.15em rgba(0,0,0,0);
-    border-radius: 0.1em;
-    transition: outline-color 0.1s, background-color 0.1s;
+    transition: outline-color 0.2s, background-color 0.2s;
 
     &:hover {
-        outline-color: rgba(0,0,0,0.1);
-        background-color: rgba(0,0,0,0.1);
+        outline-color: var(--color-link-highlight);
+        background-color: var(--color-link-highlight);
     }
 }
 
@@ -138,7 +139,7 @@ hr {
     max-width: var(--max-width);
     width: 100%;
     height: 4px;
-    background-image: url('/assets/images/halftone_bg.png');
+    background-image: var(--bg-halftone);
     background-size: 4px 4px;
     margin-top: 0;
     margin-bottom: var(--margin-medium);
@@ -150,7 +151,7 @@ hr {
 */
 
 .page-post {
-    background-color: var(--color-light-2);
+    background-color: var(--color-light);
 }
 
 .site {
@@ -197,7 +198,7 @@ hr {
     top: calc(2 * var(--unit));
     left: calc(2 * var(--unit));
     z-index: -1;
-    background-image: url('/assets/images/halftone_bg.png');
+    background-image: var(--bg-halftone);
     background-size: 4px 4px;
     border-radius: 25%;
 }
@@ -238,9 +239,9 @@ hr {
 .container--card {
     border-radius: 12px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-color: var(--color-dark);
-    background-color: var(--color-light-2);
+    background-color: var(--color-light);
     position: relative;
     margin-bottom: var(--margin-xlarge);
 }
@@ -254,7 +255,7 @@ hr {
     top: calc(2 * var(--unit));
     left: calc(2 * var(--unit));
     z-index: -1;
-    background-image: url('/assets/images/halftone_bg.png');
+    background-image: var(--bg-halftone);
     background-size: 4px 4px;
     border-radius: 12px;
 }
@@ -264,10 +265,10 @@ hr {
     font-size: var(--font-scale-4);
     text-transform: uppercase;
     background-color: var(--color-dark);
-    color: var(--color-light-2);
+    color: var(--color-light);
     letter-spacing: 0.08em;
     margin-top: 0;
-    border-radius: 11px 11px 0 0;
+    border-radius: 10px 10px 0 0;
     padding: var(--margin-small) var(--margin-medium);
 }
 
@@ -292,19 +293,27 @@ hr {
 }
 
 .link-list li {
+    position: relative;
     margin: 0;
     padding-top: 0.85em;
     padding-bottom: 0.85em;
     padding-right: var(--margin-medium);
-    border-top: dashed 1px var(--color-dark);
+}
+
+.link-list li:before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: var(--bg-halftone);
+    background-size: 4px 4px;
 }
 
 .link-list li:last-child {
     padding-bottom: 0;
-}
-
-.link-list a {
-    text-decoration: none;
 }
 
 .link-list em {
@@ -323,6 +332,7 @@ hr {
 
 .icon-list a {
     outline-width: 0.3em;
+    box-shadow: none;
 }
 
 .icon-list img {
@@ -338,6 +348,18 @@ hr {
 }
 
 .icon-list--dashed li {
+    position: relative;
     padding: var(--margin-xsmall) var(--margin-small);
-    border-right: dashed 1px var(--color-dark);
+}
+
+.icon-list--dashed li:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    right: 0;
+    background-image: var(--bg-halftone);
+    background-size: 4px 4px;
 }
