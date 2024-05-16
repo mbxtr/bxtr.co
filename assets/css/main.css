@@ -178,13 +178,20 @@ hr {
 .header {
     max-width: var(--max-width);
     width: 100%;
+    margin-top: var(--margin-large);
+    margin-bottom: var(--margin-large);
     display: flex;
+    justify-content: center;
+}
+
+.header-wrapper {
+    display: inline-flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: var(--margin-small);
-    margin-top: var(--margin-large);
-    margin-bottom: var(--margin-large);
+    text-decoration: none;
+    border-radius: 12px;
 }
 
 .profile {
@@ -230,7 +237,12 @@ hr {
 
 .header--small {
     justify-content: left;
+}
+
+.header--small .header-wrapper {
     gap: calc(3 * var(--unit));
+    padding-left: calc(2 * var(--unit));
+    padding-right: calc(2 * var(--unit));
 }
 
 .header--small .profile {
