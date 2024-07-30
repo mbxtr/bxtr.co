@@ -1,8 +1,8 @@
 :root {
     --unit: 0.2rem;
 
-    --small-screen-font-size: 0.9em;
-    --large-screen-font-size: 1.25em;
+    --small-screen-font-size: 1em;
+    --large-screen-font-size: 1.1em;
 
     --max-width: 36rem;
     --margin-xlarge: calc(16 * var(--unit));
@@ -10,6 +10,8 @@
     --margin-medium: calc(8 * var(--unit));
     --margin-small: calc(6 * var(--unit));
     --margin-xsmall: calc(4 * var(--unit));
+
+    --text-margin: 1.5em;
 
     --font-scale-1: 1.9rem;
     --font-scale-2: 1.4522rem;
@@ -104,14 +106,14 @@ h3 {
 }
 
 p {
-    margin-top: 0.85em;
-    margin-bottom: 0.85em;
+    margin-top: var(--text-margin);
+    margin-bottom: var(--text-margin);
 }
 
 blockquote {
     border-left: solid 4px rgba(0,0,0,0.1);;
-    margin-top: 0.85em;
-    margin-bottom: 0.85em;
+    margin-top: var(--text-margin);
+    margin-bottom: var(--text-margin);
     margin-left: var(--margin-xsmall);
     margin-right: var(--margin-xsmall);
     padding-left: var(--margin-xsmall);
