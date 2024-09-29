@@ -172,16 +172,21 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: var(--margin-small);
-    padding-right: var(--margin-small);
+    padding-left: var(--margin-xsmall);
+    padding-right: var(--margin-xsmall);
     padding-bottom: var(--margin-large);
 }
+
+/*
+    Header and profile
+    ---------------------------------------------
+*/
 
 .header {
     max-width: var(--max-width);
     width: 100%;
-    margin-top: var(--margin-large);
-    margin-bottom: var(--margin-large);
+    margin-top: var(--margin-small);
+    margin-bottom: var(--margin-small);
     display: flex;
     justify-content: center;
 }
@@ -261,6 +266,19 @@ hr {
     font-size: calc(10 * var(--unit));
 }
 
+/* large screen styles */
+@media only screen and (min-width: 799px) {
+    .header {
+        margin-top: var(--margin-large);
+        margin-bottom: var(--margin-large);
+    }
+}
+
+/*
+    Container for content
+    ---------------------------------------------
+*/
+
 .container {
     max-width: var(--max-width);
     width: 100%;
@@ -299,11 +317,11 @@ hr {
     letter-spacing: 0.08em;
     margin-top: 0;
     border-radius: 10px 10px 0 0;
-    padding: var(--margin-small) var(--margin-medium);
+    padding: var(--margin-xsmall) var(--margin-xsmall);
 }
 
 .container--card .content {
-    margin: var(--margin-small) var(--margin-medium);
+    margin: var(--margin-xsmall) var(--margin-xsmall);
 }
 
 .container--card .content *:first-child {
@@ -314,12 +332,27 @@ hr {
     margin-bottom: 0;
 }
 
+/* large screen styles */
+@media only screen and (min-width: 799px) {
+    .container--card .heading {
+        padding: var(--margin-small) var(--margin-medium);
+    }
+    .container--card .content {
+        margin: var(--margin-small) var(--margin-medium);
+    }
+}
+
+/*
+    List style for links
+    ---------------------------------------------
+*/
+
 .link-list {
     list-style-type: none;
     padding-left: 0;
     margin-top: 0.85em;
     margin-bottom: 0;
-    margin-right: calc(-1 * var(--margin-medium));
+    margin-right: calc(-1 * var(--margin-xsmall));
 }
 
 .link-list li {
@@ -327,7 +360,7 @@ hr {
     margin: 0;
     padding-top: 0.85em;
     padding-bottom: 0.85em;
-    padding-right: var(--margin-medium);
+    padding-right: var(--margin-xsmall);
 }
 
 .link-list li:before {
@@ -348,6 +381,21 @@ hr {
 
 .link-list em {
     font-size: var(--font-scale-4);
+}
+
+/* large screen styles */
+@media only screen and (min-width: 799px) {
+    .link-list {
+        margin-right: calc(-1 * var(--margin-medium));
+    }
+
+    .link-list li {
+        position: relative;
+        margin: 0;
+        padding-top: 0.85em;
+        padding-bottom: 0.85em;
+        padding-right: var(--margin-medium);
+    }
 }
 
 .icon-list {
