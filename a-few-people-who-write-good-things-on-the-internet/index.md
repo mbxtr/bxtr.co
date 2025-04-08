@@ -17,7 +17,7 @@ I thought I’d share them here in case anyone else was looking for quality cont
 
 * **Adam Mastroianni’s [Experimental History](https://www.experimental-history.com/)** — Adam explores the psychological aspects of human nature with a humorous twist. His articles make me chuckle and help me understand myself and others better.
 
-* **Craig Mod’s [Roden](https://craigmod.com/roden/), [Ridgeline](https://craigmod.com/ridgeline/), and [various pop-up newsletters](https://craigmod.com/ridgeline/)** — Craig spends his time walking through Japan and writing books about his experiences. His writing style is casual yet very intentional and I always finish reading one of his pieces feeling lighter and more reflective about life.
+* **Craig Mod’s [Roden](https://craigmod.com/roden/), [Ridgeline](https://craigmod.com/ridgeline/), and [various pop-up newsletters](https://craigmod.com/newsletters/)** — Craig spends his time walking through Japan and writing books about his experiences. His writing style is casual yet very intentional and I always finish reading one of his pieces feeling lighter and more reflective about life.
 
 * **David Pierce’s [Installer](https://www.theverge.com/installer-newsletter)** — Installer is published with an impressive regularity on Saturday mornings. It’s essentially my adult version of Saturday morning cartoons; it’s become the first thing that I read and is full of just enjoyable and cool stuff around the internet.
 
