@@ -10,23 +10,26 @@ layout: base.njk
             </a>
         </header>
         <article class="container">
-            <h1>{{title}}</h1>
-            
+            <header class="post-header">
+                <h1>{{title}}</h1>
+                <p><em>Published by on {{ nice_date }}</em></p>
+            </header>
+            <section class="post-content">
             {{content | safe}}
+            </section>
+            <footer class="post-footer">
+                <p class="centered"><a href="/"><em>&hookleftarrow;&#xfe0e; Back to bxtr.co</em></a></p>
+            </footer>
         </article>
-        <hr />
-        <section class="container">
-            <p class="small"><em>Published by <strong>Matt Baxter</strong> on <strong>{{ nice_date }}</strong>.</em></p>
-            <p class="small"><em>Thoughts or questions? Email me at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a> or reach out on your favorite social network.</em></p>
-            <ul class="icon-list">
-                {% for social in socialNetworks %}
-                <li><a href="{{ social.url }}"><img src="{{ social.icon }}" alt="{{ social.name }}" /></a></li>
-                {% endfor %}
-            </ul>
-        </section>
-        <hr />
-        <section class="container">
-            <p class="small"><a href="/"><em>&hookleftarrow;&#xfe0e; Back to bxtr.co</em></a></p>
-        </section>
+        <footer class="footer">
+            <section class="container">
+                <p><em>Thoughts or questions? Email me at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a> or reach out on your favorite social network.</em></p>
+                <ul class="icon-list">
+                    {% for social in socialNetworks %}
+                    <li><a href="{{ social.url }}"><img src="{{ social.icon_light }}" alt="{{ social.name }}" /></a></li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </footer>
     </main>
 </body>

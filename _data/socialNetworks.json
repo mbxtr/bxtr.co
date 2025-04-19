@@ -2,27 +2,32 @@
     {
         "name": "Instagram",
         "url": "https://www.instagram.com/mbxtr/",
-        "icon": "/assets/images/icon-instagram.svg"
+        "icon": "/assets/images/icon-instagram.svg",
+        "icon_light": "/assets/images/icon-instagram-light.svg"
     },
     {
         "name": "LinkedIn",
         "url": "https://www.linkedin.com/in/mbxtr/",
-        "icon": "/assets/images/icon-linkedin.svg"
+        "icon": "/assets/images/icon-linkedin.svg",
+        "icon_light": "/assets/images/icon-linkedin-light.svg"
     },
     {
         "name": "Mastodon",
         "url": "https://www.mastodon.social/@mbxtr",
         "icon": "/assets/images/icon-mastodon.svg",
+        "icon_light": "/assets/images/icon-mastodon-light.svg",
         "rel": "me"
     },
     {
         "name": "Threads",
         "url": "https://www.threads.net/@mbxtr",
-        "icon": "/assets/images/icon-threads.svg"
+        "icon": "/assets/images/icon-threads.svg",
+        "icon_light": "/assets/images/icon-threads-light.svg"
     },
     {
         "name": "X (Twitter)",
         "url": "https://twitter.com/mbxtr",
-        "icon": "/assets/images/icon-twitter.svg"
+        "icon": "/assets/images/icon-twitter.svg",
+        "icon_light": "/assets/images/icon-twitter-light.svg"
     }
 ]
