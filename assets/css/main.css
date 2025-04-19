@@ -164,13 +164,23 @@ a {
 a:hover {
     /* grow the gradient to fill the entire element */
     background-size: 100% 100%;
-    background-image: linear-gradient(var(--color-accent-50-opacity), var(--color-accent-50-opacity));
+    background-image: linear-gradient(var(--color-accent), var(--color-accent));
     border-radius: 4px;
 }
 
 img {
     vertical-align: middle;
     max-width: 100%;
+}
+
+li {
+    padding-left: calc(2* var(--unit));
+    margin-top: var(--text-margin);
+    margin-bottom: var(--text-margin);
+}
+
+li::marker {
+    color: var(--color-accent);
 }
 
 .centered {
@@ -349,6 +359,7 @@ img {
 .link-list li {
     position: relative;
     margin-bottom: 1em;
+    padding-left: 0;
 }
 
 .link-list em {
@@ -362,6 +373,7 @@ img {
 
 .icon-list li {
     display: inline-block;
+    padding-left: 0;
     padding-right: var(--margin-xsmall);
 }
 
