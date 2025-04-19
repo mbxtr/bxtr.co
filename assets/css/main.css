@@ -134,12 +134,24 @@ p {
 }
 
 blockquote {
-    border-left: solid 4px rgba(0,0,0,0.1);;
+    position: relative;
     margin-top: var(--text-margin);
     margin-bottom: var(--text-margin);
-    margin-left: var(--margin-xsmall);
+    margin-left: var(--margin-medium);;
     margin-right: var(--margin-xsmall);
-    padding-left: var(--margin-xsmall);
+    padding-left: calc(2 * var(--unit));
+
+    &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 4px;
+        top: 0;
+        bottom: 0;
+        left: calc(-1 * var(--margin-xsmall));
+        background: var(--color-accent);
+        border-radius: 4px;
+    }
 }
 
 strong {
@@ -173,14 +185,21 @@ img {
     max-width: 100%;
 }
 
+ul, ol {
+    padding-left: var(--margin-medium);
+    margin-top: var(--text-margin);
+    margin-bottom: var(--text-margin);
+}
+
 li {
-    padding-left: calc(2* var(--unit));
+    padding-left: calc(2 * var(--unit));
     margin-top: var(--text-margin);
     margin-bottom: var(--text-margin);
 }
 
 li::marker {
     color: var(--color-accent);
+    font-weight: 600;
 }
 
 .centered {
