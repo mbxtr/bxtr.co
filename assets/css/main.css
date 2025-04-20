@@ -392,6 +392,7 @@ li::marker {
 
 .icon-list li {
     display: inline-block;
+    margin: 0;
     padding-left: 0;
     padding-right: var(--margin-xsmall);
 }
