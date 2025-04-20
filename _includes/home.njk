@@ -9,13 +9,13 @@ layout: base.njk
                 <div class="wordmark">BXTR</div>
             </div>
         </header>
-        <section class="container container--card">
-            <h2 class="heading">Greetings</h2>
-            <div class="content">
-                <p>Hello, internet traveler. I'm Matt Baxter and this is my personal website. I don't do a whole lot here besides redesign it every few years and very infrequently write something. But, I find it fun to have my own personal corner of the internet to do what I want with it.</p>
-                <p>When I'm not browsing the interwebs (do people still do that?) I'm usally spending time with my wife and kiddos or being very snobby about coffee. I'm all about that Jesus guy and enjoy talking theology. I also enjoy playing games of all sorts — video games, board games, and sportsball type games.</p>
+        <section class="container">
+            <h2 class="heading">👋 Hello, internet traveler. I'm Matt Baxter and this is my personal website.</h2>
+            <div class="content large">
+                <p>I view this as a place to have some fun with web design and every once in a while write about something I find interesting.</p>
+                <p>When I'm not browsing the interwebs, I'm usally spending time with my wife and kiddos or being very obnoxious about coffee. I'm all about that Jesus guy and enjoy talking about theology. I also enjoy playing games of all sorts — video games, board games, and even sportsball type games.</p>
                 <p>Professionally I'm a product leader at Bestow, building a modern platform for insurance companies looking to make life insurance more accessible to everyone.</p>
-                <p>Enjoy your stay in my corner of the internet!</p>
+                <p>Enjoy your stay!</p>
             </div>
         </section>
         <section class="container container--card">
@@ -43,7 +43,7 @@ layout: base.njk
         <section class="container container--card">
             <h2 class="heading">Find me elsewhere</h2>
             <div class="content">
-                <p>Pick your favorite social network — I’m probably there. I think I’m too old for TikTok, though (that's what the kids keep telling me). You can also reach out to me on old-fashioned email at <a href="mailto:matt.baxter@gmail.com">matt.baxter@gmail.com</a>.</p>
+                <p>Pick your favorite social network — I’m probably there. I think I’m too old for TikTok, though (that's what the kids keep telling me). You can also reach out to me on old-fashioned email at <a href="mailto:matt.baxter@gmail.com"><strong>matt.baxter@gmail.com</strong></a>.</p>
                 <ul class="icon-list icon-list--dashed">
                     {% for social in socialNetworks %}
                     <li><a href="{{ social.url }}" {% if social.rel %}rel="{{social.rel}}"{% endif %}><img src="{{ social.icon }}" alt="{{ social.name }}" /></a></li>
