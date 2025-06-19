@@ -2,7 +2,7 @@
 layout: post.njk
 title: A Few People Who Write Good Things on the Internet
 date: 2025-04-07
-nice_date: April 7, 2024
+nice_date: April 7, 2025
 tags: published
 ---
 Lately I’ve reduced my usage of social media. Even those that I consider more pure the-internet-is-fun-again destinations like Mastodon and Bluesky. I still open them regularly, but I just don’t find myself going to them to find new or interesting things as much. Most of my online enjoyment comes from subscribing directly to blogs and newsletters. 
