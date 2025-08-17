@@ -160,24 +160,19 @@ strong {
 
 a {
     color: var(--color-darker);
-    text-decoration: none;
-    display: inline;
-    /* draw our “underline” as a 1‑color gradient */
-    background-image: linear-gradient(var(--color-accent-50-opacity), var(--color-accent-50-opacity));
-    background-repeat: no-repeat;
-    background-size: 100% 2px;
-    background-position: 0 100%;
-
-    /* smooth animation on size & position */
-    transition: background-size 0.15s ease-out;
-    padding: 2px;
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent-50-opacity);
+    text-decoration-thickness: 0.1em;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.1em;
+    background-color: transparent;
+    transition: text-decoration-color 0.2s, background-color 0.2s;
+    border-radius: 0.2em;
 }
 
 a:hover {
-    /* grow the gradient to fill the entire element */
-    background-size: 100% 100%;
-    background-image: linear-gradient(var(--color-accent), var(--color-accent));
-    border-radius: 4px;
+    text-decoration-color: transparent;
+    background-color: var(--color-accent-50-opacity);
 }
 
 img {
