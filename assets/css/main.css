@@ -342,30 +342,41 @@ li::marker {
 }
 
 .container--card {
-    border-radius: 6px;
+    border-radius: calc(4*var(--unit));
     border-style: solid;
-    border-width: 1px;
-    border-color: var(--color-dark);
+    border-width: calc(1*var(--unit));
+    border-color: var(--color-darker);
     background-color: var(--color-light);
     position: relative;
     padding: 0 var(--margin-medium) var(--margin-xsmall);
     margin-bottom: var(--margin-xlarge);
 }
 
-.container--card:after {
+.container--card:after, .container--card:before {
     display: block;
     position: absolute;
     content: '';
     width: 100%;
     height: 100%;
-    top: calc(2 * var(--unit));
-    left: calc(2 * var(--unit));
     z-index: -1;
-    border-radius: 6px;
+    border-radius: calc(4*var(--unit));
+}
+
+.container--card:after {
+    top: calc(3 * var(--unit));
+    left: calc(2 * var(--unit));
+    width: calc(100% - 4*var(--unit));
     background-color: var(--color-accent-50-opacity);
     background-image: var(--bg-halftone);
     background-size: 4px 4px;
-    box-shadow: calc(2*var(--unit)) calc(2*var(--unit)) 0px var(--color-accent-25-opacity);
+}
+
+.container--card:before {
+    top: calc(5 * var(--unit));
+    left: calc(5 * var(--unit));
+    width: calc(100% - 12*var(--unit));
+    background-color: var(--color-accent-25-opacity);
+    z-index: -1;
 }
 
 /* large screen styles */
