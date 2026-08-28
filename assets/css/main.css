@@ -264,6 +264,7 @@ li::marker {
     .header--large-on-desktop .profile:after {
         top: calc(2 * var(--unit));
         left: calc(2 * var(--unit));
+        box-shadow: calc(2*var(--unit)) calc(2*var(--unit)) 0px var(--color-accent-25-opacity);
     }
 
     .header--large-on-desktop .profile img {
@@ -307,7 +308,7 @@ li::marker {
     background-image: var(--bg-halftone);
     background-size: 4px 4px;
     border-radius: 40%;
-    box-shadow: calc(2*var(--unit)) calc(2*var(--unit)) 0px var(--color-accent-25-opacity);
+    box-shadow: calc(1*var(--unit)) calc(1*var(--unit)) 0px var(--color-accent-25-opacity);
 }
 
 .profile img {
@@ -469,7 +470,7 @@ li::marker {
 
 .post-header {
     text-align: center;
-    margin-bottom: var(--margin-large);
+    margin-bottom: var(--margin-medium);
 }
 
 .post-header h1 {
