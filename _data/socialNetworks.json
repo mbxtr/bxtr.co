@@ -19,12 +19,6 @@
         "rel": "me"
     },
     {
-        "name": "Threads",
-        "url": "https://www.threads.net/@mbxtr",
-        "icon": "/assets/images/icon-threads.svg",
-        "icon_light": "/assets/images/icon-threads-light.svg"
-    },
-    {
         "name": "X (Twitter)",
         "url": "https://twitter.com/mbxtr",
         "icon": "/assets/images/icon-twitter.svg",
