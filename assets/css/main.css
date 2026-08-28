@@ -4,7 +4,7 @@
     --small-screen-font-size: 0.9em;
     --large-screen-font-size: 1.1em;
 
-    --max-width: 42rem;
+    --max-width: 38rem;
     --margin-xlarge: calc(16 * var(--unit));
     --margin-large: calc(12 * var(--unit));
     --margin-medium: calc(8 * var(--unit));
@@ -29,6 +29,7 @@
     --color-accent: #71C700;
     --color-accent-50-opacity: rgba(113, 199, 0, 0.5);
     --color-accent-25-opacity: rgba(113, 199, 0, 0.25);
+    --color-accent-10-opacity: rgba(113, 199, 0, 0.1);
 
     --bg-halftone: url('/assets/images/bg-halftone.png');
 }
@@ -39,12 +40,12 @@
 
 html {
     font-size: var(--small-screen-font-size);
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Valley Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
     color: var(--color-darker);
-    line-height: 1.6;
+    line-height: 1.55;
 }
 
 @media only screen and (min-width: 799px) {
@@ -212,6 +213,15 @@ li::marker {
 
 .centered {
     text-align: center;
+}
+
+code {
+    font-weight: 600;
+    font-family: 'Valley Sans';
+    font-size: 0.95em;
+    border-radius: 6px;
+    padding: 2px;
+    background-color: var(--color-accent-10-opacity);
 }
 
 /*
