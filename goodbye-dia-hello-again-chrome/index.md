@@ -7,7 +7,7 @@ tags: published
 ---
 It’s never a good thing when your favorite app comes under the eye of your employer’s security department.
 
-I’ve been using Dia as my browser for the last few years (and Arc before it went on life support). I’ve liked it because it has a lot of great tab management features that worked with my browsing flow — vertical tabs, renaming tabs, persistent tab groups, cycling through tabs based on recent usage, and a shortcut to copy the current URL without needing to click on the address bar.
+I’ve been using [Dia](https://www.diabrowser.com/) as my browser for the last few years (and [Arc](https://arc.net/) before it went on life support). I’ve liked it because it has a lot of great tab management features that worked with my browsing flow — vertical tabs, renaming tabs, persistent tab groups, cycling through tabs based on recent usage, and a shortcut to copy the current URL without needing to click on the address bar.
 
 Dia also has a lot of AI features, but I never used them. Ironically, those AI features were the reason that I had to stop using Dia. Whatever way Dia’s AI features were implemented didn’t pass when reviewed by my company’s security department. Thus, I had to get a new browser.
 
@@ -24,5 +24,7 @@ Then I had to use a couple of extensions to replicate other capabilities:
 1. **[Copy Current URL](https://chromewebstore.google.com/detail/copy-current-url/okkmnbabeggdmakmnffkoflpdlkmmpcp).** Dia made it super easy to copy the URL of your current tab with the `⌘+⇧+C` shortcut. Once I switched to Chrome I kept attempting to use it out of muscle memory.
 2. **[Cycle Last Used Tabs](https://chromewebstore.google.com/detail/clut-cycle-last-used-tabs/cobieddmkhhnbeldhncnfcgcaccmehgn).** This was probably one of Dia’s more controversial changes: Pressing `⌃+tab` would cycle through your tabs in order of when they were last used, instead of the order of the tabs in your browser. I got used to this and really enjoyed it. Unfortunately you can’t override `⌃+tab` in Chrome, but this extension gives you the ability to map it to another keystroke.
 3. **[Tab Renamer](https://chromewebstore.google.com/detail/tab-renamer/mncaahedchkhclokjmfjbennhbeceecl).** Turns out the title of a webpage is not always a helpful tab title. Dia did it natively and this extension enables it in Chrome.
+
 I’ll admit: the switch hasn’t all been bad. I’ve been struck by just how *fast* Chrome is; I’m not sure if that’s purely relative to Dia, but it feels so much more snappy. And I’ve realized that while I am glad that Dia tried new things, there are some features, like Spaces, that don’t have as much benefit as I thought compared to Chrome’s vanilla window management. 
+
 Ultimately, I decided to switch to Chrome on my personal devices for consistency, even though our household security department is much more lenient.
