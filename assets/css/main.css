@@ -175,8 +175,8 @@ strong {
 a {
     color: var(--color-darker);
     text-decoration: underline;
-    text-decoration-color: var(--color-accent-50-opacity);
-    text-decoration-thickness: 0.1em;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 0.15em;
     text-decoration-skip-ink: none;
     text-underline-offset: 0.1em;
     background-color: transparent;
